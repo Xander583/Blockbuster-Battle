@@ -36,6 +36,23 @@ Examples of unacceptable behavior include:
 * Other conduct which could reasonably be considered inappropriate in a
   professional setting
 
+### Decisions
+Group members will make decisions on a Consensus first.
+In other scenarios we will make a majority vote to finalize a decision.
+
+### Attendance
+Our expectation for attendance is that we will assume that we all show up. If there are problems, we will reschedule. 
+
+
+### Assignments
+Every week when we meet (in class and once outside of class) we assign work and create deadlines (both “hard” and “soft,” where things must be done by hard deadlines). 
+If someone is struggling to meet a deadline they should ask for help from the rest of the group so that the deadline can be successfully met. 
+
+
+### Participation 
+We will watch each other to see that we are completing our assignments, and assign them according to what we are capable of doing. 
+
+
 ## Enforcement Responsibilities
 
 Community leaders are responsible for clarifying and enforcing our standards of
