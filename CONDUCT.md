@@ -74,7 +74,7 @@ Main examples of community spaces include using URI emails and discord conversat
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be
 reported to the community leaders responsible for enforcement at
-the CTO's email address(es).
+the product owner.
 All complaints will be reviewed and investigated promptly and fairly.
 
 All community leaders are obligated to respect the privacy and security of the
