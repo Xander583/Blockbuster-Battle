@@ -52,6 +52,19 @@ If someone is struggling to meet a deadline they should ask for help from the re
 ### Participation 
 We will watch each other to see that we are completing our assignments, and assign them according to what we are capable of doing. 
 
+### Meeting Times and Locations/Mediums (How will you decide on locations and times that suit all members)?
+Planned weekly meetings are at 4 pm Wednesday meetings over Discord and also In-class meetings. We decide on meeting times based on each individual's schedule.
+
+### Agenda and Minutes /Notes (Who will take them how will they be shared?)
+We will write down in a shared google doc at the start of the meeting what we will be going over, then we will each add notes as needed during the meeting. 
+
+### Promptness (What do you expect and how will you handle lateness?)
+Overall, no ghosting: if something comes up just let us know, whether that be about completing a task or real life events.
+
+
+### Conversational Courtesies (How will the team encourage and reinforce active listening, sharing of the airtime, tangents, respectful dialogue, etc )
+The more things on the agenda, the less tangents there should be. In addition, we shall take turns talking and listening, giving people the opportunity to say something if they want to. 
+
 
 ## Enforcement Responsibilities
 
