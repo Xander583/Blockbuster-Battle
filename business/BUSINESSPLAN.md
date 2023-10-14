@@ -9,7 +9,7 @@ This is a lean canvas of [BlockBuster-Battle](https://docs.google.com/presentati
 ### Solutions: Them and their friends can download the app and compare each other's scores to stay engaged with cinema
 
 ## Persona 2 
-## sketch name Jack : Young movie going adult.
+## sketch name Jenn : Young movie going adult.
 ## Pain points
     - Watches plenty of movies and thinks they they are a good critic on metrics.
     - A way to show they are superior with this skill.
