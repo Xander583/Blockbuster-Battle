@@ -14,8 +14,8 @@ This is a lean canvas of [BlockBuster-Battle](https://docs.google.com/presentati
     - Watches plenty of movies and thinks they they are a good critic on metrics.
     - A way to show they are superior with this skill.
 ## Demographic info
-    - Age: 19-29
-    - Gender: male/female
+    - Age: 27
+    - Gender: female
     - Movie presence: goes to movies several times a year
 ## Solution
     - Provide a service that allows them to guess movie going metrics against other users for points.
