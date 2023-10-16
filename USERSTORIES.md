@@ -19,3 +19,9 @@ AS A Blockbuster Battles user, I WANT TO spend points/fake currency IN quick TO 
 -USERS CAN LEARN WHAT BLOCKBUSTER BATTLE IS.
 -USERS CAN LEARN WHAT A COMPETITIVE BLOCKBUSTER BATTLE LOOKS LIKE.
 -USERS CAN READ A FAQ PAGE CONTAINING ALL OF THIS.
+
+## USER STORY: AS A general user, I WANT TO create an account using my email and a password TO login to the app SO THAT I can have an account and begin using the app.
+
+### ACCEPTANCE CRITERIA:
+- When entering a new email and password the user receives a confirmation email by clicking the signup button.
+- When entering the confirmed email with their password the user can successfully login to their account.
