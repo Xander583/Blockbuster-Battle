@@ -27,7 +27,7 @@ AS A Blockbuster Battles user, I WANT TO spend points/fake currency IN quick TO 
 - When entering the confirmed email with their password the user can successfully login to their account.
 
 ## USER STORY: 
-- AS A User, I WANT TO be able to sign into a personal account TO save user data SO THAT the user can have a personalized experience
+- AS A User, I WANT TO be able to sign into a personal account TO save user data SO THAT the user can have a personalized experience NO LATER THAN OCT. 30
 
 ## ACCEPTANCE CRITERIA: 
 - When the user opens the app, they're asked to sign in or in
