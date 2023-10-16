@@ -26,5 +26,4 @@ This is a lean canvas of [BlockBuster-Battle](https://docs.google.com/presentati
     - Provide a service that allows them to guess movie going metrics against other users for points.
 
 
-
-
+![picture of block_buster lean canvas](https://docs.google.com/presentation/d/1l0I4iQU2YY8dyI-TOilwlE4ZapO-IgIuJrNuGAjJtBI/edit?usp=sharing)
