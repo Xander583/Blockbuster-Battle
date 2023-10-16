@@ -8,6 +8,9 @@
   - Action: The title can stay the same since the vast majority of people felt some level of comfort with it. We want to have people choose our product based on its functionality over choosing it for a catchy title, however we will be open to changing the title in the near future if a better option presents itself.
 
 ## User Observation 3
+- Most people enjoyed the “concept” of our app, and thought it to be rather intuitive.
+- About 50-65% of users seem to be interested in our app, however state that they remain unsure of how it’d work.
+- A focus around “user friendliness” can help new potential users not feel overwhelmed or confused about using our app.
 
 ## User Observation 4
 
