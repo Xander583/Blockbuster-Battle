@@ -32,3 +32,9 @@ AS A Blockbuster Battles user, I WANT TO spend points/fake currency IN quick TO 
 ## ACCEPTANCE CRITERIA: 
 - When the user opens the app, they're asked to sign in or in
 - When signing up, the user can save their data to the associated account
+
+## As a general user I want to see a list of movies on display within a few weeks so that I can observe what a movie is about and gain indication on what it is.
+
+### Acceptance Criteria: 
+- Use API’s to gather images and information/synopsis
+- Users can visually see a list of movies
