@@ -25,3 +25,10 @@ AS A Blockbuster Battles user, I WANT TO spend points/fake currency IN quick TO 
 ## ACCEPTANCE CRITERIA:
 - When entering a new email and password the user receives a confirmation email by clicking the signup button.
 - When entering the confirmed email with their password the user can successfully login to their account.
+
+## USER STORY: 
+- AS A User, I WANT TO be able to sign into a personal account TO save user data SO THAT the user can have a personalized experience
+
+## ACCEPTANCE CRITERIA: 
+- When the user opens the app, they're asked to sign in or in
+- When signing up, the user can save their data to the associated account
