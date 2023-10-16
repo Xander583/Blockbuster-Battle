@@ -13,5 +13,8 @@
 - A focus around “user friendliness” can help new potential users not feel overwhelmed or confused about using our app.
 
 ## User Observation 4
+- Most people do not go to the movies that much
+- Almost all survey takers go a few times a year or even less. 42.9% go a few times a year. 17.9% go more than 6 times a year. 14.3% go once a year. 14.3% go once every few years
+- People in the target demographic do not often go to movies, so it is best to have our fantasy league extend to longer periods of time or have movies from earlier months.
 
 ## User Observation 5
