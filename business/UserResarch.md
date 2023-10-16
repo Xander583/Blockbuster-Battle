@@ -18,6 +18,6 @@
   - People in the target demographic do not often go to movies, so it is best to have our fantasy league extend to longer periods of time or have movies from earlier months.
 
 ## User Observation 5
-  - most people taking the survey were in our target demographic
+  - Most people taking the survey were in our target demographic
   - Data: 89% of survey takers were 19-29
   - Action: people in our target demographic care enough to take the survey, which means we do not need a course of action in changing anything related to the people we’re targeting
