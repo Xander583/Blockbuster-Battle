@@ -1,7 +1,7 @@
 ## User Observation 1
-  - most users do not understand what fantasy football is or know the rules.
-  - half the users made comments not understanding the concept, or the rules of fantasy football.
-  - Team actions: work on making the rules explicit and clearly establish what fantasy movie battles entails.
+  - Most users do not understand what fantasy football is or know the rules.
+  - Data: Half the users made comments not understanding the concept, or the rules of fantasy football.
+  - Action: We will work on making the rules explicit and clearly establish what fantasy movie battles entails.
 ## User Observation 2
   - Most people did not say that they disliked our title.
   - Data: 89% of survey respondents chose that they were either indifferent to the title or liked the title.
