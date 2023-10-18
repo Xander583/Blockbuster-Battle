@@ -1,0 +1,266 @@
+{
+    "data": {
+        "project": {
+            "apiComponents": {
+                "ApiContainer": {
+                    "id": "ApiContainer",
+                    "children": []
+                }
+            },
+            "assets": {
+                "65303c3a72d8dbef77fefc1c": {
+                    "externalStorageType": "GCS",
+                    "_id": "65303c3a72d8dbef77fefc1c",
+                    "size": "33683",
+                    "mimetype": "image/png",
+                    "encoding": "7bit",
+                    "originalname": "alexgram-high-resolution-logo-black-on-transparent-background.png",
+                    "backendURI": "/project/65303c3a72d8db832bfefc1a/getasset/65303c3a72d8dbef77fefc1c",
+                    "name": "alexgram-high-resolution-logo-black-on-transparent-background.png",
+                    "externalName": "users/64ff17e7afc6da06d89fcf5a/projects/65303c3a72d8db832bfefc1a/assets/65303c3a72d8dbef77fefc1c",
+                    "createdAt": "2023-09-21T11:34:48.092Z",
+                    "updatedAt": "2023-09-21T11:34:48.092Z",
+                    "__v": 0,
+                    "signedUrl": "https://storage.googleapis.com/thunkable-x-production/users/64ff17e7afc6da06d89fcf5a/projects/65303c3a72d8db832bfefc1a/assets/65303c3a72d8dbef77fefc1c?X-Goog-Algorithm=GOOG4-RSA-SHA256&X-Goog-Credential=thunkable-ios%40thunkable-ios.iam.gserviceaccount.com%2F20231018%2Fauto%2Fstorage%2Fgoog4_request&X-Goog-Date=20231018T201247Z&X-Goog-Expires=172800&X-Goog-SignedHeaders=host&X-Goog-Signature=2c98630e59d8981bd129dc97f57b181df9a4e7a385c7ef0f91fe75762bb615e649e815403060a91c2f44f40b8b4d4448c65aee75c1b5d474d65f48d65dcf6de19f58716011a36b98aba43f3a5c639671ec8c51f26af285aab7e783a4009f0f3e4bc997c7b9fe28eed7a61948e65ca8c15b09dd06443557d35746fc24e73de9227fc72b5b8a2abbfd071bbaf2657c77ee1582c9adc4f122e1381433d5a4cd49cf8db3f134aaf104846e6669af41e684917e6450eaaa7e427861b1199da3cc65bb7411d8ca92bce098fa8d0b4b688a519d064932bb85502f27ad8c70fa918a43d02adbbe72f29485568a7affac9e05fa339c1dc32158430fa8deeade5b085546b5",
+                    "signedUrlExpirationTime": 1697832767976
+                }
+            },
+            "backendUpgradeVersion": 22,
+            "blockly": {
+                "0c8503eb-9a4d-4103-8aa9-8e07180386a6": {
+                    "xml": "",
+                    "permissions": {
+                        "android": [],
+                        "ios": []
+                    }
+                },
+                "a16e7593-9f4b-4595-8b28-c98f16242689": {
+                    "xml": "",
+                    "permissions": {
+                        "android": [],
+                        "ios": []
+                    }
+                },
+                "3ca16f7a-f386-4d2c-9357-4053aadd7a37": {
+                    "xml": "",
+                    "permissions": {
+                        "android": [],
+                        "ios": []
+                    }
+                },
+                "f843736a-b0fb-431a-b220-38f7d5a0261f": {
+                    "xml": "",
+                    "permissions": {
+                        "android": [
+                            "android.permission.CAMERA"
+                        ],
+                        "ios": [
+                            {
+                                "name": "NSCameraUsageDescription",
+                                "label": "Camera",
+                                "hint": "Describe why your app uses the camera."
+                            },
+                            {
+                                "name": "NSPhotoLibraryUsageDescription",
+                                "label": "Photos",
+                                "hint": "Describe why your app uses photos."
+                            }
+                        ]
+                    },
+                    "enabledFeatures": {
+                        "iap": false
+                    }
+                }
+            },
+            "categories": [
+                "Social Networking"
+            ],
+            "components": {
+                "children": [
+                    {
+                        "id": "a16e7593-9f4b-4595-8b28-c98f16242689"
+                    },
+                    {
+                        "id": "0c8503eb-9a4d-4103-8aa9-8e07180386a6"
+                    },
+                    {
+                        "type": "Drawer Navigator",
+                        "translatedName": "Drawer Navigator",
+                        "reactType": "DrawerNavigator",
+                        "properties": {
+                            "DrawerPosition": "left",
+                            "TabNavigationOptions": {
+                                "tabBarVisible": true
+                            },
+                            "config": {
+                                "contentOptions": {
+                                    "drawerPosition": "left"
+                                }
+                            },
+                            "navigationOptions": {
+                                "tabBarVisible": true
+                            }
+                        },
+                        "children": [
+                            {
+                                "id": "f843736a-b0fb-431a-b220-38f7d5a0261f"
+                            },
+                            {
+                                "id": "3ca16f7a-f386-4d2c-9357-4053aadd7a37"
+                            }
+                        ],
+                        "id": "a13424af-8ae3-4b00-9a9e-7e0fd4efc8e2",
+                        "thunkableVersion": 421,
+                        "name": "Drawer_Navigator1"
+                    }
+                ]
+            },
+            "figmaComponents": {},
+            "description": null,
+            "icon": null,
+            "projectName": "Blockbuster Battle",
+            "settings": {
+                "teamId": null,
+                "appName": null,
+                "icon": null,
+                "autoIncrementVersion": true,
+                "ignoreNotchArea": false,
+                "notchAreaColor": null,
+                "androidVersionName": "1",
+                "androidVersionCode": 1,
+                "iosVersionNumber": "1",
+                "iosBuildNumber": "1",
+                "firebaseAPIKey": "AIzaSyB1AvHecofSrFGgCpnJv8VykCgygHxjlrM",
+                "firebaseDatabaseURL": "https://blockbuster-battle-default-rtdb.firebaseio.com",
+                "stripePublishableKeyTest": "",
+                "stripePublishableKeyLive": "",
+                "stripeAccountId": null,
+                "stripeTestMode": true,
+                "isPublic": true,
+                "description": null,
+                "mobileTutorial": null,
+                "pushNotificationAndroidAppId": null,
+                "pushNotificationIOSAppId": null,
+                "pushNotificationGeolocationEnabled": null,
+                "yandexAPIKey": "",
+                "imageRecognizerServerURL": "",
+                "imageRecognizerSubscriptionKey": "",
+                "cloudName": "",
+                "cloudinaryAPIKey": "",
+                "cloudinaryAPISecret": "",
+                "permissions": {
+                    "ios": {
+                        "usageDescriptions": {
+                            "NSCameraUsageDescription": "",
+                            "NSPhotoLibraryUsageDescription": ""
+                        }
+                    }
+                },
+                "googleMapAPIKeyAndroid": null,
+                "googleMapAPIKeyIOS": null,
+                "googleOAuthiOSClientID": null,
+                "googleOAuthiOSURLScheme": null,
+                "googleOAuthWebClientID": null,
+                "appleOAuthWebClientID": null,
+                "appleOAuthWebRedirectURI": null,
+                "admobAppIdIOS": null,
+                "admobAppIdAndroid": "ca-app-pub-3940256099942544/6300978111",
+                "admobUserTrackingUsageDescription": null,
+                "__typename": "ProjectSettings"
+            },
+            "projectSettings": {
+                "teamId": null,
+                "appName": null,
+                "icon": null,
+                "autoIncrementVersion": true,
+                "ignoreNotchArea": false,
+                "notchAreaColor": null,
+                "androidVersionName": "1",
+                "androidVersionCode": 1,
+                "iosVersionNumber": "1",
+                "iosBuildNumber": "1",
+                "firebaseAPIKey": "AIzaSyB1AvHecofSrFGgCpnJv8VykCgygHxjlrM",
+                "firebaseDatabaseURL": "https://blockbuster-battle-default-rtdb.firebaseio.com",
+                "stripePublishableKeyTest": "",
+                "stripePublishableKeyLive": "",
+                "stripeAccountId": null,
+                "stripeTestMode": true,
+                "isPublic": true,
+                "description": null,
+                "mobileTutorial": null,
+                "pushNotificationAndroidAppId": null,
+                "pushNotificationIOSAppId": null,
+                "pushNotificationGeolocationEnabled": null,
+                "yandexAPIKey": "",
+                "imageRecognizerServerURL": "",
+                "imageRecognizerSubscriptionKey": "",
+                "cloudName": "",
+                "cloudinaryAPIKey": "",
+                "cloudinaryAPISecret": "",
+                "permissions": {
+                    "ios": {
+                        "usageDescriptions": {
+                            "NSCameraUsageDescription": "",
+                            "NSPhotoLibraryUsageDescription": ""
+                        }
+                    }
+                },
+                "googleMapAPIKeyAndroid": null,
+                "googleMapAPIKeyIOS": null,
+                "googleOAuthiOSClientID": null,
+                "googleOAuthiOSURLScheme": null,
+                "googleOAuthWebClientID": null,
+                "appleOAuthWebClientID": null,
+                "appleOAuthWebRedirectURI": null,
+                "admobAppIdIOS": null,
+                "admobAppIdAndroid": "ca-app-pub-3940256099942544/6300978111",
+                "admobUserTrackingUsageDescription": null,
+                "__typename": "ProjectSettings"
+            },
+            "hasAdmob": true,
+            "hasBluetoothLowEnergy": null,
+            "hasPushNotification": false,
+            "hasAssistant": null,
+            "dataSourceLinks": [],
+            "localDataSources": [],
+            "customProperties": [],
+            "modules": [],
+            "usesDragDropUi": true,
+            "totalCopy": "0",
+            "totalStar": "0",
+            "starAction": "star",
+            "variables": {
+                "ce053267-aa0b-4700-bf99-ace19d02c2c4": {
+                    "scope": "APP",
+                    "name": "currentlySigningUp",
+                    "screenId": "0c8503eb-9a4d-4103-8aa9-8e07180386a6"
+                },
+                "18b643b1-c392-4422-880c-bde9618edcdd": {
+                    "scope": "STORED",
+                    "name": "email",
+                    "screenId": "0c8503eb-9a4d-4103-8aa9-8e07180386a6"
+                },
+                "05b6e716-78e5-42f3-84e6-e021a8180050": {
+                    "scope": "STORED",
+                    "name": "password",
+                    "screenId": "0c8503eb-9a4d-4103-8aa9-8e07180386a6"
+                },
+                "fdd902a6-8b32-472f-8264-cc63d56e66e0": {
+                    "scope": "APP",
+                    "name": "session email",
+                    "screenId": "0c8503eb-9a4d-4103-8aa9-8e07180386a6"
+                },
+                "65aa8bc1-d9ca-463a-9d49-6196844612c9": {
+                    "scope": "APP",
+                    "name": "user id",
+                    "screenId": "0c8503eb-9a4d-4103-8aa9-8e07180386a6"
+                }
+            },
+            "defaultDesignerDevice": "PHONE",
+            "defaultDesignerOrientation": "PORTRAIT",
+            "schemaVersion": 2,
+            "organization": null,
+            "__typename": "Project"
+        }
+    }
+}
