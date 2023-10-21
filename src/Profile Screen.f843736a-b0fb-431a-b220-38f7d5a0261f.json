@@ -1,4 +1,5 @@
 {
+    "id": "f843736a-b0fb-431a-b220-38f7d5a0261f",
     "type": "Screen",
     "translatedName": "Screen",
     "reactType": "ViewWithProps",
@@ -125,8 +126,8 @@
                 "FontSize": 16,
                 "CustomFont": "",
                 "BackgroundColor": "rgba(248, 231, 28, 1)",
-                "Height": 29,
-                "Width": 160,
+                "Height": 33,
+                "Width": 162,
                 "Visible": true,
                 "X": 214,
                 "Y": 177,
@@ -768,13 +769,13 @@
             "translatedName": "Image",
             "properties": {
                 "resizeMode": "stretch",
-                "Height": 239,
-                "Width": 239,
+                "Height": 113,
+                "Width": 107,
                 "Visible": true,
-                "X": 0,
-                "Y": 215,
-                "RelativeX": 0,
-                "RelativeY": 215,
+                "X": 10,
+                "Y": 236,
+                "RelativeX": 10,
+                "RelativeY": 236,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "marginTop": 0,
@@ -800,7 +801,7 @@
                 },
                 "ParentId": "f843736a-b0fb-431a-b220-38f7d5a0261f",
                 "position": "absolute",
-                "edgeOffsets": 215.00000000000003
+                "edgeOffsets": 236.99999999999994
             },
             "children": [],
             "id": "39c35603-892d-4920-9e45-248bd6cf259c",
@@ -1182,7 +1183,6 @@
             "name": "Go to signout"
         }
     ],
-    "id": "f843736a-b0fb-431a-b220-38f7d5a0261f",
     "thunkableVersion": 421,
     "name": "Profile Screen"
 }

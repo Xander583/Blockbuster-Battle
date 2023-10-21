@@ -1,4 +1,5 @@
 {
+    "id": "0c8503eb-9a4d-4103-8aa9-8e07180386a6",
     "type": "Screen",
     "translatedName": "Screen",
     "reactType": "ViewWithProps",
@@ -836,7 +837,6 @@
             "name": "Email"
         }
     ],
-    "id": "0c8503eb-9a4d-4103-8aa9-8e07180386a6",
     "thunkableVersion": 421,
     "name": "Sign In Screen"
 }
