@@ -1,4 +1,5 @@
 {
+    "id": "3ca16f7a-f386-4d2c-9357-4053aadd7a37",
     "type": "Screen",
     "translatedName": "Screen",
     "reactType": "ViewWithProps",
@@ -290,7 +291,6 @@
             "name": "Sign Out"
         }
     ],
-    "id": "3ca16f7a-f386-4d2c-9357-4053aadd7a37",
     "thunkableVersion": 421,
     "name": "Sign Out Screen"
 }

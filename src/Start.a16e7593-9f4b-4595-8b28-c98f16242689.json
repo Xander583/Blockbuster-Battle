@@ -1,4 +1,5 @@
 {
+    "id": "a16e7593-9f4b-4595-8b28-c98f16242689",
     "type": "Screen",
     "translatedName": "Screen",
     "reactType": "ViewWithProps",
@@ -47,6 +48,51 @@
         "BackgroundColor": "rgba(74, 74, 74, 1)"
     },
     "children": [
+        {
+            "type": "Image",
+            "translatedName": "Image",
+            "properties": {
+                "resizeMode": "stretch",
+                "Height": 224,
+                "Width": 226,
+                "Visible": true,
+                "X": 74,
+                "Y": 196,
+                "RelativeX": 74,
+                "RelativeY": 196,
+                "ResizeMode": "STRETCH",
+                "style": {
+                    "marginTop": 0,
+                    "marginBottom": 0,
+                    "marginLeft": 0,
+                    "marginRight": 0,
+                    "paddingTop": 0,
+                    "paddingBottom": 0,
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "shadowColor": "rgba(0, 0, 0, 0)",
+                    "shadowOpacity": 0,
+                    "scaledShadowOpacity": 0,
+                    "shadowRadius": 0,
+                    "shadowOffset": {
+                        "width": 0,
+                        "height": 0
+                    },
+                    "position": "absolute",
+                    "left": "36.079996744791664%",
+                    "top": "31.771617243136244%",
+                    "display": "flex"
+                },
+                "capInsets": {},
+                "ParentId": "a16e7593-9f4b-4595-8b28-c98f16242689",
+                "position": "absolute",
+                "edgeOffsets": 196.99999999999997
+            },
+            "children": [],
+            "id": "5e2eaacc-c8bb-4f49-adc6-4b926291e14c",
+            "thunkableVersion": 424,
+            "name": "Image1"
+        },
         {
             "type": "Label",
             "translatedName": "Label",
@@ -120,7 +166,7 @@
             "type": "Button",
             "translatedName": "Button",
             "properties": {
-                "Text": "Start",
+                "Text": "Sign up",
                 "TextColor": "rgba(0, 0, 0, 1)",
                 "FontSize": 36,
                 "CustomFont": "",
@@ -170,7 +216,6 @@
             "name": "StartB"
         }
     ],
-    "id": "a16e7593-9f4b-4595-8b28-c98f16242689",
     "thunkableVersion": 421,
     "name": "Start"
 }
