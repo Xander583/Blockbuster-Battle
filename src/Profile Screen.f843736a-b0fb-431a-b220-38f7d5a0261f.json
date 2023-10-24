@@ -49,6 +49,59 @@
     },
     "children": [
         {
+            "type": "Button",
+            "translatedName": "Button",
+            "properties": {
+                "Text": "Choose Profile Icon",
+                "TextColor": "rgba(0, 0, 0, 1)",
+                "FontSize": 16,
+                "CustomFont": "",
+                "BackgroundColor": "rgba(248, 231, 28, 1)",
+                "Height": 49,
+                "Width": 311,
+                "Visible": true,
+                "X": 24,
+                "Y": 562,
+                "RelativeX": 24,
+                "RelativeY": 562,
+                "ResizeMode": "STRETCH",
+                "style": {
+                    "marginTop": 0,
+                    "marginBottom": 0,
+                    "marginLeft": 0,
+                    "marginRight": 0,
+                    "paddingTop": 0,
+                    "paddingBottom": 0,
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "borderRadius": 15,
+                    "shadowColor": "rgba(0, 0, 0, 0)",
+                    "shadowOpacity": 0,
+                    "scaledShadowOpacity": 0,
+                    "shadowRadius": 0,
+                    "shadowOffset": {
+                        "width": 0,
+                        "height": 0
+                    },
+                    "position": "absolute",
+                    "left": "26.799995930989585%",
+                    "top": "74.11044233742504%",
+                    "display": "flex"
+                },
+                "FontBold": false,
+                "FontItalic": false,
+                "Raised": false,
+                "Disabled": false,
+                "ParentId": "f843736a-b0fb-431a-b220-38f7d5a0261f",
+                "position": "absolute",
+                "edgeOffsets": 562
+            },
+            "children": [],
+            "id": "44abea3f-d581-498c-aba8-26a6cc639786",
+            "thunkableVersion": 425,
+            "name": "Icon_button_screen"
+        },
+        {
             "type": "Label",
             "translatedName": "Label",
             "reactType": "Text",
@@ -773,9 +826,9 @@
                 "Width": 107,
                 "Visible": true,
                 "X": 10,
-                "Y": 236,
+                "Y": 255,
                 "RelativeX": 10,
-                "RelativeY": 236,
+                "RelativeY": 255,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "marginTop": 0,
@@ -801,7 +854,7 @@
                 },
                 "ParentId": "f843736a-b0fb-431a-b220-38f7d5a0261f",
                 "position": "absolute",
-                "edgeOffsets": 236.99999999999994
+                "edgeOffsets": 255.00000000000003
             },
             "children": [],
             "id": "39c35603-892d-4920-9e45-248bd6cf259c",

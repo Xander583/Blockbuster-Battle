@@ -34,7 +34,7 @@
         "ShowStatusBar": true,
         "StatusBarStyle": "default",
         "TranslucentStatusBar": false,
-        "StatusBarColor": "rgba(0,0,0,0.53)",
+        "StatusBarColor": "rgba(155, 155, 155, 1)",
         "TabNavigationOptions": {
             "tabBarVisible": true
         },
