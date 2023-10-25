@@ -7,3 +7,6 @@
 # Retention Metrics:
   - Use google analytics to see what pages users are visiting the most so we can see what parts are working, and more importantly what parts are not working.
   - Use analytics to see how often users are logging in weekly to see if retention is waxing or waning.
+
+# Adoption Metrics:
+  - We'd track the number of accounts that are created just about every week through-out the life of our app by using FireBase backend data and maniuplating various features under user management. With this we can go about collecting necessary metrics.
