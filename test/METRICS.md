@@ -1,4 +1,3 @@
-![picture of HEART FRAMEWORK](test/HEART.jpg)
 ![image](https://github.com/Xander583/Blockbuster-Battle/assets/123519150/807338ff-481c-4b60-99d8-e32eae23d931)
 
 
