@@ -1,4 +1,4 @@
-![picture of HEART FRAMEWORK]([https://github.com/Xander583/Blockbuster-Battle/blob/main/test/HEART.jpg])
+![picture of HEART FRAMEWORK](/test/HEART.jpg)
 
 
 # Engagement metrics: 
