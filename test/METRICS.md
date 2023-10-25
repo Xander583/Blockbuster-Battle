@@ -10,3 +10,7 @@
 
 # Adoption Metrics:
   - We'd track the number of accounts that are created just about every week through-out the life of our app by using FireBase backend data and maniuplating various features under user management. With this we can go about collecting necessary metrics.
+
+# Task Success Metrics:
+- We will keep track of how much the average point pool is increasing by each week
+- (in the future if they can spend their points we'll need to account for that)
