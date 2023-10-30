@@ -539,6 +539,9 @@
                     "permissions": {
                         "android": [],
                         "ios": []
+                    },
+                    "enabledFeatures": {
+                        "iap": false
                     }
                 },
                 "f843736a-b0fb-431a-b220-38f7d5a0261f": {
