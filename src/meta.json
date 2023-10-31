@@ -539,9 +539,6 @@
                     "permissions": {
                         "android": [],
                         "ios": []
-                    },
-                    "enabledFeatures": {
-                        "iap": false
                     }
                 },
                 "f843736a-b0fb-431a-b220-38f7d5a0261f": {
@@ -769,12 +766,6 @@
                                         "name": "column1",
                                         "label": "Column 1",
                                         "type": "STRING"
-                                    },
-                                    {
-                                        "id": "ba52d19c-b46d-42c4-a0c7-8860e782a5d2",
-                                        "name": "column2",
-                                        "label": "Column 2",
-                                        "type": "NUMBER"
                                     }
                                 ],
                                 "data": {
@@ -787,10 +778,6 @@
                                                     {
                                                         "fieldId": "5e01b501-6712-415b-a252-afc93d2944c0",
                                                         "value": "movie1"
-                                                    },
-                                                    {
-                                                        "fieldId": "ba52d19c-b46d-42c4-a0c7-8860e782a5d2",
-                                                        "value": "false"
                                                     }
                                                 ]
                                             }
@@ -803,10 +790,6 @@
                                                     {
                                                         "fieldId": "5e01b501-6712-415b-a252-afc93d2944c0",
                                                         "value": "movie2"
-                                                    },
-                                                    {
-                                                        "fieldId": "ba52d19c-b46d-42c4-a0c7-8860e782a5d2",
-                                                        "value": "false"
                                                     }
                                                 ]
                                             }
@@ -819,10 +802,6 @@
                                                     {
                                                         "fieldId": "5e01b501-6712-415b-a252-afc93d2944c0",
                                                         "value": "movie3"
-                                                    },
-                                                    {
-                                                        "fieldId": "ba52d19c-b46d-42c4-a0c7-8860e782a5d2",
-                                                        "value": "false"
                                                     }
                                                 ]
                                             }
@@ -832,10 +811,6 @@
                                             "node": {
                                                 "id": "adf9edd9-f3eb-4c7c-a753-7ccaf631eebb",
                                                 "values": [
-                                                    {
-                                                        "fieldId": "ba52d19c-b46d-42c4-a0c7-8860e782a5d2",
-                                                        "value": "false"
-                                                    },
                                                     {
                                                         "fieldId": "5e01b501-6712-415b-a252-afc93d2944c0",
                                                         "value": "movie4"
@@ -848,10 +823,6 @@
                                             "node": {
                                                 "id": "d986bf57-2cfb-45e2-9af5-f2d2598e19bd",
                                                 "values": [
-                                                    {
-                                                        "fieldId": "ba52d19c-b46d-42c4-a0c7-8860e782a5d2",
-                                                        "value": "false"
-                                                    },
                                                     {
                                                         "fieldId": "5e01b501-6712-415b-a252-afc93d2944c0",
                                                         "value": "movie5"
@@ -904,9 +875,9 @@
                     "name": "user id",
                     "screenId": "0c8503eb-9a4d-4103-8aa9-8e07180386a6"
                 },
-                "7f465cb6-c3f4-4ae6-a522-5b8834890c2d": {
-                    "scope": "STORED",
-                    "name": "previously selected 5 star movie",
+                "4f4461aa-cb47-4a7d-8d9b-11cbc56ed990": {
+                    "scope": "APP",
+                    "name": "5 Star Movie",
                     "screenId": "b8175bb4-0f8e-4f83-8148-172d46f2c9d1"
                 }
             },

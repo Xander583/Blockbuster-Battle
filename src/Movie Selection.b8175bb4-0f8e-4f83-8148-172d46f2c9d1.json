@@ -1,5 +1,4 @@
 {
-    "id": "b8175bb4-0f8e-4f83-8148-172d46f2c9d1",
     "type": "Screen",
     "translatedName": "Screen",
     "reactType": "ViewWithProps",
@@ -59,6 +58,205 @@
     },
     "children": [
         {
+            "type": "Group",
+            "label": "Group",
+            "translatedName": "Group",
+            "reactType": "ViewWithProps",
+            "properties": {
+                "Height": 322,
+                "Width": 81,
+                "Visible": true,
+                "X": 273,
+                "Y": 100,
+                "RelativeX": 273,
+                "RelativeY": 100,
+                "ResizeMode": "STRETCH",
+                "BackgroundPictureResizeMode": "contain",
+                "Position": "Relative to Screen",
+                "TouchOpacity": 20,
+                "ParentId": "b8175bb4-0f8e-4f83-8148-172d46f2c9d1",
+                "position": "absolute",
+                "edgeOffsets": 100,
+                "style": {
+                    "position": "absolute",
+                    "left": "39.49333902994792%",
+                    "top": "74.29535049369846%",
+                    "display": "flex"
+                },
+                "resizeMode": "contain"
+            },
+            "children": [
+                {
+                    "type": "Switch",
+                    "translatedName": "Switch",
+                    "reactType": "Switch",
+                    "properties": {
+                        "value": true,
+                        "Visible": true,
+                        "tintColor": "rgba(176, 176, 176, 100)",
+                        "onTintColor": "rgba(208, 215, 231, 100)",
+                        "thumbTintColor": "rgba(93, 122, 252, 100)",
+                        "offThumbTintColor": "rgba(248, 249, 251, 100)",
+                        "Height": 20,
+                        "Width": 40,
+                        "X": 288,
+                        "Y": 304,
+                        "RelativeX": 15,
+                        "RelativeY": 204,
+                        "ResizeMode": "STRETCH",
+                        "ParentId": "b8175bb4-0f8e-4f83-8148-172d46f2c9d1",
+                        "position": "absolute",
+                        "edgeOffsets": 304,
+                        "style": {
+                            "position": "absolute",
+                            "left": "71.86667073567709%",
+                            "top": "42.871066297905735%",
+                            "display": "flex"
+                        }
+                    },
+                    "children": [],
+                    "id": "1cfe71b5-249b-4810-b0d1-ebf10ffd65c1",
+                    "thunkableVersion": 426,
+                    "name": "5-Star Switch 5"
+                },
+                {
+                    "type": "Switch",
+                    "translatedName": "Switch",
+                    "reactType": "Switch",
+                    "properties": {
+                        "value": true,
+                        "Visible": true,
+                        "tintColor": "rgba(176, 176, 176, 100)",
+                        "onTintColor": "rgba(208, 215, 231, 100)",
+                        "thumbTintColor": "rgba(93, 122, 252, 100)",
+                        "offThumbTintColor": "rgba(248, 249, 251, 100)",
+                        "Height": 20,
+                        "Width": 40,
+                        "X": 288,
+                        "Y": 260,
+                        "RelativeX": 15,
+                        "RelativeY": 160,
+                        "ResizeMode": "STRETCH",
+                        "ParentId": "b8175bb4-0f8e-4f83-8148-172d46f2c9d1",
+                        "position": "absolute",
+                        "edgeOffsets": 260,
+                        "style": {
+                            "position": "absolute",
+                            "left": "72.66667073567709%",
+                            "top": "36.42428968621158%",
+                            "display": "flex"
+                        }
+                    },
+                    "children": [],
+                    "id": "5bc36a8e-8181-4cbe-990d-b103b73230ed",
+                    "thunkableVersion": 426,
+                    "name": "5-Star Switch 4"
+                },
+                {
+                    "type": "Switch",
+                    "translatedName": "Switch",
+                    "reactType": "Switch",
+                    "properties": {
+                        "value": true,
+                        "Visible": true,
+                        "tintColor": "rgba(176, 176, 176, 100)",
+                        "onTintColor": "rgba(208, 215, 231, 100)",
+                        "thumbTintColor": "rgba(93, 122, 252, 100)",
+                        "offThumbTintColor": "rgba(248, 249, 251, 100)",
+                        "Height": 20,
+                        "Width": 40,
+                        "X": 288,
+                        "Y": 214,
+                        "RelativeX": 15,
+                        "RelativeY": 114,
+                        "ResizeMode": "STRETCH",
+                        "ParentId": "b8175bb4-0f8e-4f83-8148-172d46f2c9d1",
+                        "position": "absolute",
+                        "edgeOffsets": 214,
+                        "style": {
+                            "position": "absolute",
+                            "left": "73.46667073567708%",
+                            "top": "27.728637512298537%",
+                            "display": "flex"
+                        }
+                    },
+                    "children": [],
+                    "id": "3cfa281a-d77f-4352-af34-7309d02bff20",
+                    "thunkableVersion": 426,
+                    "name": "5-Star Switch 3"
+                },
+                {
+                    "type": "Switch",
+                    "translatedName": "Switch",
+                    "reactType": "Switch",
+                    "properties": {
+                        "value": true,
+                        "Visible": true,
+                        "tintColor": "rgba(176, 176, 176, 100)",
+                        "onTintColor": "rgba(208, 215, 231, 100)",
+                        "thumbTintColor": "rgba(93, 122, 252, 100)",
+                        "offThumbTintColor": "rgba(248, 249, 251, 100)",
+                        "Height": 20,
+                        "Width": 40,
+                        "X": 288,
+                        "Y": 164,
+                        "RelativeX": 15,
+                        "RelativeY": 64,
+                        "ResizeMode": "STRETCH",
+                        "ParentId": "b8175bb4-0f8e-4f83-8148-172d46f2c9d1",
+                        "position": "absolute",
+                        "edgeOffsets": 164,
+                        "style": {
+                            "position": "absolute",
+                            "left": "70.00000406901042%",
+                            "top": "18.13343511349794%",
+                            "display": "flex"
+                        }
+                    },
+                    "children": [],
+                    "id": "43c3e5e6-2b7d-467a-addc-694952cd86e4",
+                    "thunkableVersion": 426,
+                    "name": "5-Star Switch 2"
+                },
+                {
+                    "type": "Switch",
+                    "translatedName": "Switch",
+                    "reactType": "Switch",
+                    "properties": {
+                        "value": true,
+                        "Visible": true,
+                        "tintColor": "rgba(176, 176, 176, 100)",
+                        "onTintColor": "rgba(208, 215, 231, 100)",
+                        "thumbTintColor": "rgba(93, 122, 252, 100)",
+                        "offThumbTintColor": "rgba(248, 249, 251, 100)",
+                        "Height": 20,
+                        "Width": 40,
+                        "X": 288,
+                        "Y": 116,
+                        "RelativeX": 15,
+                        "RelativeY": 16,
+                        "ResizeMode": "STRETCH",
+                        "ParentId": "b8175bb4-0f8e-4f83-8148-172d46f2c9d1",
+                        "position": "absolute",
+                        "edgeOffsets": 116.80000305175781,
+                        "style": {
+                            "position": "absolute",
+                            "left": "76.40000406901042%",
+                            "top": "11.986508576766305%",
+                            "display": "flex"
+                        }
+                    },
+                    "children": [],
+                    "id": "e46177ae-b89b-414e-8c49-4dac0477c11c",
+                    "thunkableVersion": 426,
+                    "name": "5-Star Switch 1"
+                }
+            ],
+            "id": "d3bc5813-0953-4807-be8a-e92a7cc385bc",
+            "thunkableVersion": 426,
+            "name": "Group1"
+        },
+        {
             "type": "List View",
             "label": "Data Viewer List",
             "translatedName": "Data Viewer List",
@@ -67,7 +265,7 @@
                 "Layout": "LIST",
                 "DataViewerConfig": {
                     "layoutSelection": "LIST",
-                    "itemLayoutSelection": "TITLE_WITH_CARET",
+                    "itemLayoutSelection": "TITLE",
                     "swipe": {
                         "right": {
                             "isActive": false,
@@ -83,21 +281,21 @@
                         }
                     }
                 },
-                "Height": 324,
-                "Width": 339,
+                "Height": 321,
+                "Width": 263,
                 "Visible": true,
-                "X": 18,
-                "Y": 41,
-                "RelativeX": 18,
-                "RelativeY": 41,
+                "X": 0,
+                "Y": 98,
+                "RelativeX": 0,
+                "RelativeY": 98,
                 "ResizeMode": "STRETCH",
                 "ParentId": "b8175bb4-0f8e-4f83-8148-172d46f2c9d1",
                 "position": "absolute",
-                "edgeOffsets": 41,
+                "edgeOffsets": 98,
                 "style": {
                     "position": "absolute",
-                    "left": "16.02667236328125%",
-                    "top": "88.35832175465002%",
+                    "left": "25.093339029947916%",
+                    "top": "17.38380992609164%",
                     "display": "flex"
                 }
             },
@@ -228,10 +426,10 @@
                                                 "width": 0,
                                                 "height": 0
                                             },
-                                            "display": "flex",
                                             "fontFamily": "Helvetica",
                                             "fontWeight": "600",
                                             "flex": 0,
+                                            "display": "flex",
                                             "position": "relative"
                                         },
                                         "children": "Title",
@@ -239,12 +437,12 @@
                                         "numberOfLines": 1
                                     },
                                     "children": [],
-                                    "id": "f030f49b-4365-41b9-9a70-5ad5589415fc",
+                                    "id": "6d490a62-16b2-4f3e-a1de-e3a389eacae9",
                                     "thunkableVersion": 426,
                                     "bindings": {
                                         "Text": {
                                             "type": "COMPONENT_PROPERTY_TABLE_ELEMENT",
-                                            "componentId": "01ed66af-8103-42c4-94f1-3d75fa203341",
+                                            "componentId": "8039773f-6047-46c3-a380-62fd70691bf9",
                                             "property": "DataSourceTableBinding",
                                             "column": "5e01b501-6712-415b-a252-afc93d2944c0",
                                             "row": 0
@@ -254,7 +452,7 @@
                                     "bindingLabel": "Title"
                                 }
                             ],
-                            "id": "7cc2099e-6c98-46a4-a363-9d388a7db688",
+                            "id": "87b020a9-273c-4533-89b0-f3d8cb4d63d8",
                             "thunkableVersion": 426,
                             "name": "TitleWrapper"
                         },
@@ -287,87 +485,15 @@
                                         "height": 0
                                     },
                                     "alignSelf": "stretch",
-                                    "width": "33%",
-                                    "display": "flex",
                                     "flex": 0,
                                     "flexDirection": "row",
                                     "justifyContent": "flex-end",
                                     "alignItems": "center",
+                                    "display": "flex",
                                     "position": "relative"
                                 }
                             },
                             "children": [
-                                {
-                                    "type": "Label",
-                                    "translatedName": "Label",
-                                    "reactType": "Text",
-                                    "properties": {
-                                        "Text": "Subtitle",
-                                        "FontSize": 15,
-                                        "CustomFont": "",
-                                        "NumberOfLines": 1,
-                                        "LineHeight": 1,
-                                        "Color": "rgba(155, 155, 155, 0.8)",
-                                        "Height": "Fit contents",
-                                        "Width": "Fit contents",
-                                        "Visible": true,
-                                        "ResizeMode": "STRETCH",
-                                        "style": {
-                                            "color": "rgba(155, 155, 155, 0.8)",
-                                            "fontSize": 15,
-                                            "fontStyle": "normal",
-                                            "textShadowOffset": {},
-                                            "letterSpacing": 0,
-                                            "textDecorationLine": "none",
-                                            "textDecorationStyle": "solid",
-                                            "textDecorationColor": "rgba(0, 0, 0, 1)",
-                                            "writingDirection": "auto",
-                                            "marginTop": 0,
-                                            "marginBottom": 0,
-                                            "marginLeft": 5,
-                                            "marginRight": 5,
-                                            "paddingTop": 0,
-                                            "paddingBottom": 0,
-                                            "paddingLeft": 0,
-                                            "paddingRight": 0,
-                                            "flexWrap": "wrap",
-                                            "borderWidth": 0,
-                                            "borderRadius": 0,
-                                            "borderColor": "rgba(236, 237, 237, 1)",
-                                            "borderStyle": "solid",
-                                            "shadowColor": "rgba(0, 0, 0, 0)",
-                                            "shadowOpacity": 0,
-                                            "scaledShadowOpacity": 0,
-                                            "shadowRadius": 0,
-                                            "shadowOffset": {
-                                                "width": 0,
-                                                "height": 0
-                                            },
-                                            "display": "flex",
-                                            "flex": 0,
-                                            "fontFamily": "Helvetica",
-                                            "position": "relative"
-                                        },
-                                        "children": "Subtitle",
-                                        "ItemElementId": "subtitle_label",
-                                        "ellipsizeMode": "tail",
-                                        "numberOfLines": 1
-                                    },
-                                    "children": [],
-                                    "id": "a11070d6-f508-4af4-b72f-9cb2ea1fa3dc",
-                                    "thunkableVersion": 426,
-                                    "bindings": {
-                                        "Text": {
-                                            "type": "COMPONENT_PROPERTY_TABLE_ELEMENT",
-                                            "componentId": "01ed66af-8103-42c4-94f1-3d75fa203341",
-                                            "property": "DataSourceTableBinding",
-                                            "column": "ba52d19c-b46d-42c4-a0c7-8860e782a5d2",
-                                            "row": 0
-                                        }
-                                    },
-                                    "name": "Subtitle",
-                                    "bindingLabel": "Subtitle"
-                                },
                                 {
                                     "type": "AntIcon",
                                     "translatedName": "",
@@ -385,22 +511,22 @@
                                         }
                                     },
                                     "children": [],
-                                    "id": "818246af-b96d-4ed5-9bbd-e1e20b349e4d",
+                                    "id": "7b48e1a1-5a62-4924-b558-4ab11bf8dff4",
                                     "thunkableVersion": 426,
                                     "name": "Caret"
                                 }
                             ],
-                            "id": "e7664d37-8e07-4dc7-8945-a3ed5051a2c0",
+                            "id": "4be75ce3-25c8-480d-942e-aaacf161379a",
                             "thunkableVersion": 426,
-                            "name": "SubtitleWrapper"
+                            "name": "CaretWrapper"
                         }
                     ],
-                    "id": "14a7fff9-cf80-4ca2-b3a6-7a51d5d8608d",
+                    "id": "4c2e286d-0a19-4af6-a562-3c91642355a9",
                     "thunkableVersion": 426,
                     "name": "LayoutWrapper"
                 }
             ],
-            "id": "01ed66af-8103-42c4-94f1-3d75fa203341",
+            "id": "8039773f-6047-46c3-a380-62fd70691bf9",
             "thunkableVersion": 426,
             "bindings": {
                 "DataSourceTableBinding": {
@@ -413,6 +539,7 @@
             "name": "Data_Viewer_List2"
         }
     ],
+    "id": "b8175bb4-0f8e-4f83-8148-172d46f2c9d1",
     "thunkableVersion": 426,
     "name": "Movie Selection"
 }
