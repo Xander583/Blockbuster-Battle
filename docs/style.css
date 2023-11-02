@@ -1,1 +1,16 @@
+div.main-content{
 
+    max-width: 820px;
+    max-height: 1300px;
+    height: 1300px;
+    background: #E7D889;
+    border-style: solid;
+    border-color: black;
+
+    margin: auto;
+
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
