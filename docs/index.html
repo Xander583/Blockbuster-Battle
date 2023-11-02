@@ -8,12 +8,12 @@ Creator is Keith Paterson
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-
+  <link href = "../styles/style.css" type="text/css" rel = "stylesheet" />
   <title>Document</title>
   <style>
 
     body {text-align: center;
-    margin-bottom: auto;
+      margin-bottom: auto;
     }
     div{
       max-width: 800px;
@@ -32,8 +32,12 @@ Creator is Keith Paterson
 
 </head>
 <body>
+
+
 <!-- Change here  -->
- <img src = "Banner.png" width = "1400" height="400">
+<div class = "main-content">
+
+<img src = "../img/Banner.png" width = "800" height="400">
 
 <!-- id's and people info  -->
 <div id ="firstPerson" width = "200">
@@ -130,7 +134,7 @@ Creator is Keith Paterson
 
 
 
-<!-- Functions not used  -->
+  <!-- Functions not used  -->
   function InsertData() {
     set(ref(db, "People/"+ enterID.value),{
       Name: enterName.value,
@@ -164,48 +168,48 @@ Creator is Keith Paterson
   }
 
 
-    const dbref = ref(db);
+  const dbref = ref(db);
 
-    get (child(dbref, "OIoXByEinqYrT9IJSorrlFLkev13/"))
-            .then((snapshot)=>{
-              if(snapshot.exists()){
-                dataName.innerHTML = "name: " + snapshot.val().name;
-                birthday.innerHTML = "birthday: " + snapshot.val().birthday;
-                animal.innerHTML = "Favorite Animal: " + snapshot.val().animal;
-                food.innerHTML = "Favorite Food: " + snapshot.val().food;
+  get (child(dbref, "OIoXByEinqYrT9IJSorrlFLkev13/"))
+          .then((snapshot)=>{
+            if(snapshot.exists()){
+              dataName.innerHTML = "name: " + snapshot.val().name;
+              birthday.innerHTML = "birthday: " + snapshot.val().birthday;
+              animal.innerHTML = "Favorite Animal: " + snapshot.val().animal;
+              food.innerHTML = "Favorite Food: " + snapshot.val().food;
 
-                image.src = snapshot.val().image;
+              image.src = snapshot.val().image;
 
-              } else {
-                alert("No data found");
-              }
-            })
-            .catch((error)=>{
-              alert(error)
-            })
-
-
+            } else {
+              alert("No data found");
+            }
+          })
+          .catch((error)=>{
+            alert(error)
+          })
 
 
 
-    get (child(dbref, "gY3Vbkh8yfVnAEa4mf7vuVgxxb83/"))
-            .then((snapshot)=>{
-              if(snapshot.exists()){
-                dataName2.innerHTML = "name: " + snapshot.val().name;
 
-                birthday2.innerHTML = "birthday: " + snapshot.val().birthday;
-                animal2.innerHTML = "Favorite Animal: " + snapshot.val().animal;
-                food2.innerHTML = "Favorite Food: " + snapshot.val().food;
 
-                image2.src = snapshot.val().image;
+  get (child(dbref, "gY3Vbkh8yfVnAEa4mf7vuVgxxb83/"))
+          .then((snapshot)=>{
+            if(snapshot.exists()){
+              dataName2.innerHTML = "name: " + snapshot.val().name;
 
-              } else {
-                alert("No data found");
-              }
-            })
-            .catch((error)=>{
-              alert(error)
-            })
+              birthday2.innerHTML = "birthday: " + snapshot.val().birthday;
+              animal2.innerHTML = "Favorite Animal: " + snapshot.val().animal;
+              food2.innerHTML = "Favorite Food: " + snapshot.val().food;
+
+              image2.src = snapshot.val().image;
+
+            } else {
+              alert("No data found");
+            }
+          })
+          .catch((error)=>{
+            alert(error)
+          })
 
 
 
@@ -243,5 +247,8 @@ Creator is Keith Paterson
   findBtn.addEventListener('click', FindData);
 
 </script>
+
+
+</div>
 </body>
 </html>
