@@ -1,4 +1,5 @@
 {
+    "id": "8e188176-9380-45a0-a7ed-e344472fec26",
     "type": "Screen",
     "translatedName": "Screen",
     "reactType": "ViewWithProps",
@@ -748,7 +749,6 @@
             "name": "user name input"
         }
     ],
-    "id": "8e188176-9380-45a0-a7ed-e344472fec26",
     "thunkableVersion": 424,
     "name": "Screen1"
 }
