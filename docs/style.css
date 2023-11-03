@@ -1,6 +1,6 @@
 div.main-content{
 
-    max-width: 820px;
+    max-width: 1000px;
     max-height: 1300px;
     height: 1300px;
     background: #E7D889;
@@ -13,4 +13,20 @@ div.main-content{
     padding-left: 5px;
     padding-bottom: 5px;
     padding-right: 5px;
+}
+
+
+#WebTitle{
+    font-family: "VT323";
+    font-size: 80px;
+    text-shadow: 3px 3px red;
+
+}
+
+.main-content img{
+
+    border-color: blueviolet;
+    border: 10px;
+    border-style: ridge;
+
 }
