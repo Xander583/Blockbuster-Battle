@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -88,7 +86,120 @@
 
 <!-- import statement  -->
 <script type="module">
-  // Import the functions you need from the SDKs you need
+
+  //import box office scrapper ------------------------------------------------------------------------box office scrapper
+  const fs = require('fs');
+  const https = require('https');
+  const jsdom = require('jsdom');
+  const { JSDOM } = jsdom;
+  const { window } = new JSDOM();
+
+  const BASE_DIR = __dirname;
+
+  function urlToTxt(url, filename = 'weekly.html', save = false) 
+  {
+    return new Promise((resolve, reject) =>
+    {
+        https.get(url, (res) => 
+        {
+          let data = '';
+          res.on('data', (chunk) => 
+          {
+            data += chunk;
+          });
+          res.on('end', () =>
+          {
+            if (res.statusCode === 200) 
+            {
+              const htmlText = data;
+              if (save)
+              {
+                fs.writeFileSync(filename, htmlText, 'utf8');
+              }
+              resolve(htmlText);
+              } 
+              else
+              {
+                reject('Failed to fetch URL');
+              }
+            });
+        });
+    });
+  }
+  async function parseAndExtract(url, weekNumber) 
+  {
+    try 
+    {
+      const htmlText = await urlToTxt(url);
+      const { document } = (new JSDOM(htmlText)).window;
+      const tableClass = '.imdb-scroll-table';
+      const rTable = document.querySelectorAll(tableClass);
+      const tableData = [];
+      let headerNames = [];
+      if (rTable.length === 0) 
+      {
+         return false;
+      }
+      const parsedTable = rTable[0];
+      const rows = parsedTable.querySelectorAll('tr');
+      const headerRow = rows[0];
+      const headerCols = headerRow.querySelectorAll('th');
+      headerNames = Array.from(headerCols).map((x) => x.textContent);
+      for (let i = 1; i < rows.length; i++)
+      {
+        const cols = rows[i].querySelectorAll('td');
+        const rowData = Array.from(cols).map((col) => col.textContent);
+        tableData.push(rowData);
+      }
+      const jsonData = tableData.map((row) =>
+      row.reduce((obj, value, index) =>
+      {
+        obj[headerNames[index]] = value;
+        return obj;
+      }, {}));
+      const filePath = `${BASE_DIR}/data/week-${weekNumber}.json`;
+      fs.mkdirSync(`${BASE_DIR}/data`, { recursive: true });
+      fs.writeFileSync(filePath, JSON.stringify(jsonData, null, 2), 'utf8');
+      return true;
+    } 
+    catch (error) 
+    {
+      console.error(error);
+      return false;
+    }
+  }
+
+  function run(startWeek, weeksAgo)
+  {
+    const now = new Date();
+    for (let i = 0; i <= weeksAgo; i++)
+    {
+        const startDate = new Date(now);
+        startDate.setDate(now.getDate() - i * 7);
+        const year = startDate.getFullYear();
+        const weekNumber = startDate.toLocaleString('en-US', { week: 'iso' });
+        const weekNumberStr = `${year}W${weekNumber}`;
+        const url = `https://www.boxofficemojo.com/weekly/${weekNumberStr}/`;
+        parseAndExtract(url, weekNumberStr)
+            .then((finished) =>
+            {
+                if (finished)
+                {
+                  console.log(`Finished week ${weekNumberStr}`);
+                }
+                else
+                {
+                  console.log(`Week ${weekNumberStr} not finished`);
+                }
+            })
+            .catch((error) => console.error(error));
+    }
+  }
+  const args = process.argv.slice(2);
+  const count = args.length > 0 ? parseInt(args[0]) : 0;
+  run(null, count);
+
+  // Import the functions you need from the SDKs you need                                     ----------------------------------------------------------------------------this is database now
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js";
   // TODO: Add SDKs for Firebase products that you want to use
