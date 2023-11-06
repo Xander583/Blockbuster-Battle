@@ -9,3 +9,9 @@ Link to Tella's bug: [Tella's bug ](https://docs.google.com/presentation/d/1IFxm
 ![Kai Maffucci 305Soft Test Case](https://github.com/Xander583/Blockbuster-Battle/assets/123519150/b422bb5a-b29e-413a-81af-d2093c18853e)
 
 Link to Kai's google slide: [Kai's test case](https://docs.google.com/presentation/d/1anYRAV1eX4-q-K1VG84W6_n3orwiacG3v5WGGxwOi8s/edit?usp=sharing)
+
+
+## Chow's
+![image](https://github.com/Xander583/Blockbuster-Battle/assets/90432346/e3befe5a-e82a-4005-893a-df4a514e252b)
+
+Link to Chow's google slide bug: [Chow's test case](https://docs.google.com/presentation/d/16WMZtIMacxmj6QP4FfJNNopt3GDw1AJ2lVyawuWq6H4/edit?usp=sharing)
