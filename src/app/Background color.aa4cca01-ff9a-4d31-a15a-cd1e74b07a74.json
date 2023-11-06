@@ -1,5 +1,4 @@
 {
-    "id": "a16e7593-9f4b-4595-8b28-c98f16242689",
     "type": "Screen",
     "translatedName": "Screen",
     "reactType": "ViewWithProps",
@@ -30,8 +29,7 @@
             "flexDirection": "column",
             "justifyContent": "center",
             "alignItems": "center",
-            "display": "flex",
-            "backgroundColor": "rgba(74, 74, 74, 1)"
+            "display": "flex"
         },
         "ShowStatusBar": true,
         "StatusBarStyle": "default",
@@ -40,82 +38,38 @@
         "TabNavigationOptions": {
             "tabBarVisible": true
         },
+        "TabNavigatorIcon": {},
+        "DrawerNavigationOptions": {},
+        "StackNavigationOptions": {
+            "headerStyle": {}
+        },
         "ScreenOrientation": "portrait",
         "DesignerHeight": 667,
         "DesignerWidth": 375,
         "ResponsiveWidth": 375,
         "isSimple": true,
-        "BackgroundColor": "rgba(74, 74, 74, 1)"
+        "navigationOptions": {
+            "headerStyle": {}
+        },
+        "tabNavigationOptions": {}
     },
     "children": [
         {
-            "type": "Image",
-            "translatedName": "Image",
+            "type": "TextInput",
+            "translatedName": "Text Input",
             "properties": {
-                "resizeMode": "stretch",
-                "Height": 224,
-                "Width": 226,
+                "Hint": "Type to change color",
+                "Height": 43,
+                "Width": 271,
                 "Visible": true,
-                "X": 74,
-                "Y": 196,
-                "RelativeX": 74,
-                "RelativeY": 196,
+                "X": 52,
+                "Y": 53,
+                "RelativeX": 52,
+                "RelativeY": 53,
                 "ResizeMode": "STRETCH",
                 "style": {
-                    "marginTop": 0,
-                    "marginBottom": 0,
-                    "marginLeft": 0,
-                    "marginRight": 0,
-                    "paddingTop": 0,
-                    "paddingBottom": 0,
-                    "paddingLeft": 0,
-                    "paddingRight": 0,
-                    "shadowColor": "rgba(0, 0, 0, 0)",
-                    "shadowOpacity": 0,
-                    "scaledShadowOpacity": 0,
-                    "shadowRadius": 0,
-                    "shadowOffset": {
-                        "width": 0,
-                        "height": 0
-                    },
-                    "position": "absolute",
-                    "left": "36.079996744791664%",
-                    "top": "31.771617243136244%",
-                    "display": "flex"
-                },
-                "capInsets": {},
-                "ParentId": "a16e7593-9f4b-4595-8b28-c98f16242689",
-                "position": "absolute",
-                "edgeOffsets": 196.99999999999997
-            },
-            "children": [],
-            "id": "5e2eaacc-c8bb-4f49-adc6-4b926291e14c",
-            "thunkableVersion": 424,
-            "name": "Image1"
-        },
-        {
-            "type": "Label",
-            "translatedName": "Label",
-            "reactType": "Text",
-            "properties": {
-                "Text": "Blockbuster Battle",
-                "FontSize": 50,
-                "CustomFont": "",
-                "LineHeight": 1,
-                "Color": "rgba(248, 231, 28, 1)",
-                "FontWeight": "bold",
-                "TextAlign": "center",
-                "Height": 114,
-                "Width": 309,
-                "Visible": true,
-                "X": 33,
-                "Y": 67,
-                "RelativeX": 33,
-                "RelativeY": 67,
-                "ResizeMode": "STRETCH",
-                "style": {
-                    "color": "rgba(248, 231, 28, 1)",
-                    "fontSize": 50,
+                    "color": "rgba(0, 0, 0, 1)",
+                    "fontSize": 16,
                     "fontStyle": "normal",
                     "textShadowOffset": {},
                     "letterSpacing": 0,
@@ -129,12 +83,12 @@
                     "marginRight": 0,
                     "paddingTop": 0,
                     "paddingBottom": 0,
-                    "paddingLeft": 0,
+                    "paddingLeft": 15,
                     "paddingRight": 0,
-                    "flexWrap": "wrap",
+                    "backgroundColor": "rgba(248, 249, 251, 100)",
                     "borderWidth": 0,
-                    "borderRadius": 0,
-                    "borderColor": "rgba(236, 237, 237, 1)",
+                    "borderRadius": 5,
+                    "borderColor": "rgba(0, 0, 0, 1)",
                     "borderStyle": "solid",
                     "shadowColor": "rgba(0, 0, 0, 0)",
                     "shadowOpacity": 0,
@@ -145,39 +99,41 @@
                         "height": 0
                     },
                     "position": "absolute",
-                    "left": "53.62667236328125%",
-                    "top": "15.573463268365817%",
-                    "lineHeight": 1,
-                    "display": "flex",
-                    "textAlign": "center",
-                    "fontWeight": "bold"
+                    "left": "17.200004069010415%",
+                    "top": "15.963273856235945%",
+                    "display": "flex"
                 },
-                "ParentId": "a16e7593-9f4b-4595-8b28-c98f16242689",
+                "editable": true,
+                "onChangeText": "function(n){XI().f[2]++,XI().s[12]++,this.properties.Text=n}",
+                "placeholderTextColor": "rgba(117, 117, 117, 1)",
+                "clearButtonMode": "never",
+                "underlineColorAndroid": "rgba(0, 0, 0, 0)",
+                "ParentId": "aa4cca01-ff9a-4d31-a15a-cd1e74b07a74",
                 "position": "absolute",
-                "edgeOffsets": 67,
-                "children": "Blockbuster Battle"
+                "edgeOffsets": 53,
+                "placeholder": "Type to change color"
             },
             "children": [],
-            "id": "cdcdb8ce-9377-4911-a904-5e21b83e20f8",
-            "thunkableVersion": 424,
-            "name": "Label3"
+            "id": "beebc53c-87b4-47b7-8cb4-712019c37fa5",
+            "thunkableVersion": 428,
+            "name": "Type Background"
         },
         {
             "type": "Button",
             "translatedName": "Button",
             "properties": {
-                "Text": "Sign up",
+                "Text": "Return",
                 "TextColor": "rgba(0, 0, 0, 1)",
-                "FontSize": 36,
+                "FontSize": 14,
                 "CustomFont": "",
-                "BackgroundColor": "rgba(248, 231, 28, 1)",
-                "Height": 134,
-                "Width": 253,
+                "BackgroundColor": "rgba(126, 211, 33, 1)",
+                "Height": 30,
+                "Width": 91,
                 "Visible": true,
-                "X": 61,
-                "Y": 439,
-                "RelativeX": 61,
-                "RelativeY": 439,
+                "X": 274,
+                "Y": 11,
+                "RelativeX": 274,
+                "RelativeY": 11,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "marginTop": 0,
@@ -198,24 +154,80 @@
                         "height": 0
                     },
                     "position": "absolute",
-                    "left": "46.000004069010416%",
-                    "top": "63.571963102921195%",
+                    "left": "74.80000406901041%",
+                    "top": "14.793851243323651%",
                     "display": "flex"
                 },
                 "FontBold": false,
                 "FontItalic": false,
                 "Raised": false,
                 "Disabled": false,
-                "ParentId": "a16e7593-9f4b-4595-8b28-c98f16242689",
+                "ParentId": "f843736a-b0fb-431a-b220-38f7d5a0261f",
                 "position": "absolute",
-                "edgeOffsets": 439.99999999999994
+                "edgeOffsets": 11
             },
             "children": [],
-            "id": "e5e4c638-87a4-49d1-8064-2149f1b465b6",
-            "thunkableVersion": 421,
-            "name": "StartB"
+            "id": "9af7a47f-2605-4182-b5c7-5647de1cba0f",
+            "thunkableVersion": 428,
+            "bindings": null,
+            "name": "Return back"
+        },
+        {
+            "type": "Button",
+            "translatedName": "Button",
+            "properties": {
+                "Text": "Confirm Changes",
+                "TextColor": "rgba(0, 0, 0, 1)",
+                "FontSize": 14,
+                "CustomFont": "",
+                "BackgroundColor": "rgba(248, 231, 28, 1)",
+                "Height": 27,
+                "Width": 138,
+                "Visible": true,
+                "X": 118,
+                "Y": 121,
+                "RelativeX": 118,
+                "RelativeY": 121,
+                "ResizeMode": "STRETCH",
+                "style": {
+                    "marginTop": 0,
+                    "marginBottom": 0,
+                    "marginLeft": 0,
+                    "marginRight": 0,
+                    "paddingTop": 0,
+                    "paddingBottom": 0,
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "borderRadius": 15,
+                    "shadowColor": "rgba(0, 0, 0, 0)",
+                    "shadowOpacity": 0,
+                    "scaledShadowOpacity": 0,
+                    "shadowRadius": 0,
+                    "shadowOffset": {
+                        "width": 0,
+                        "height": 0
+                    },
+                    "position": "absolute",
+                    "left": "74.80000406901041%",
+                    "top": "14.793851243323651%",
+                    "display": "flex"
+                },
+                "FontBold": false,
+                "FontItalic": false,
+                "Raised": false,
+                "Disabled": false,
+                "ParentId": "f843736a-b0fb-431a-b220-38f7d5a0261f",
+                "position": "absolute",
+                "edgeOffsets": 121.00000000000001
+            },
+            "children": [],
+            "id": "dc11b397-b2b0-4612-89d3-039ba8ccd06c",
+            "thunkableVersion": 428,
+            "bindings": null,
+            "name": "Confirm changes"
         }
     ],
-    "thunkableVersion": 421,
-    "name": "Start"
+    "id": "aa4cca01-ff9a-4d31-a15a-cd1e74b07a74",
+    "thunkableVersion": 428,
+    "name": "Background color"
 }
