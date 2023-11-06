@@ -15,3 +15,11 @@ Link to Kai's google slide: [Kai's test case](https://docs.google.com/presentati
 ![image](https://github.com/Xander583/Blockbuster-Battle/assets/90432346/e3befe5a-e82a-4005-893a-df4a514e252b)
 
 Link to Chow's google slide bug: [Chow's test case](https://docs.google.com/presentation/d/16WMZtIMacxmj6QP4FfJNNopt3GDw1AJ2lVyawuWq6H4/edit?usp=sharing)
+
+
+## Bergeron's
+
+![image](https://github.com/Xander583/Blockbuster-Battle/assets/98467752/bfbfc6aa-2fd9-47de-98ab-86aa7686f8a8)
+
+Link to Bergeron's google slide: [Bergeron's test case](https://docs.google.com/presentation/d/1xoXsTf7vkAA_JJkJpNCNEPn9AL40rh90gz2x9IllDCU/edit?usp=sharing)
+
