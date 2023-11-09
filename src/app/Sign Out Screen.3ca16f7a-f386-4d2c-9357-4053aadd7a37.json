@@ -235,7 +235,7 @@
             "id": "611a1472-d373-49e1-99e5-c37a16eaf959",
             "thunkableVersion": 421,
             "bindings": null,
-            "name": "Reset"
+            "name": "Reset Pass"
         },
         {
             "type": "Button",
