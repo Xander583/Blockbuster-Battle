@@ -19,15 +19,23 @@
 
   <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 
-  <title>BlockBuster Battle</title>
+  <title>Document</title>
   <style>
+
+    body {text-align: center;
+      margin-bottom: auto;
+    }
+    div{
+      max-width: 800px;
+      margin: auto;
+      position: center;
+    }
     body {
       display: flex;
       align-items: center;
       justify-content: center;
       height: 100vh;
       margin: 0;
-      overflow: hidden;
     }
 
     .main-content {
@@ -36,7 +44,7 @@
     padding: 20px;
     border-radius: 8px;
     background-color: #111211;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 223, 0);
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -60,32 +68,59 @@
       color: rgb(255, 223, 0); 
     }
     
+    #firstPerson {position: center; float: left; width: 35%; background-color: #c4820b; color: #1e55c9;}
+    #secondPerson {position: center; float: right; width: 35%; background-color: #c4820b; color: #1e55c9;}
+
+
+    input {width: 120px;}
   </style>
 
+
 </head>
-<body>  
+<body>
 
 <div class = "main-content">
+
 
   <!-- header class for title, logo, etc  -->
 <div class = "header">
 
   <h1 id = "WebTitle">
-      <center>BlockBuster Battle</center>
+      BlockBuster Battle
   </h1>
 
-  <!-- NAVIGATION PAGE START-->
+  <!-- Change here for image  -->
+  <img src = "../img/Banner.png" width = "400" height="200">
+</div>
+  <!-- id's and people info  -->
+<div id ="firstPerson" width = "200">
   <div class="button-container">
     <button class="button" onclick="window.location.href='https://xander583.github.io/Blockbuster-Battle/high_score.html'"> High Score Page</button>
     <button class="button" onclick="window.location.href='https://xander583.github.io/Blockbuster-Battle/main_page.html'"> Main Page</button>
-    <button class="button" onclick="window.location.href='https://xander583.github.io/Blockbuster-Battle/thunkable.html'"> Thunkable App Page</button>
   </div>
-  
-  <!-- NAVIGATION PAGE CODE END-->
-  <!-- Change here for image  -->
-  <!--  <img src = "../img/Banner.png" width = "400" height="200">  -->
+
+  <h1>First Person</h1>
+
+  <h3 id = "dataName" type = "text"></h3>
+  <h3 id="birthday" type="text"></h3>
+  <h3 id="animal" type="text"></h3>
+  <h3 id="food" type="text"></h3>
+  <img id = "image" src= " " width = "200" height="200">
 
 </div>
+
+<div id = "secondPerson">
+  <h1>Second Person</h1>
+  <h3 id = "dataName2" type = "text"></h3>
+  <h3 id="birthday2" type="text"></h3>
+  <h3 id="animal2" type="text"></h3>
+  <h3 id="food2" type="text"></h3>
+  <img id = "image2" src= " " width = "200" height="200">
+
+</div>
+
+  <!-- thunkable embed -->
+<iframe src="https://thunkable.site/w/LLET2l0UmDrJ5rrJI9b0Z" title="blockbuster-battle" height = 700 width = 700></iframe>
 
 <!-- import statement  -->
 <script type="module">
