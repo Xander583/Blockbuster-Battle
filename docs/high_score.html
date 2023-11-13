@@ -1,13 +1,59 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      background-color: #000; 
+      color: #FFD700;
+      margin: 0; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+    }
 
+    h1 {
+      font-size: 2em;
+      margin-top: 20px; 
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 80%; 
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 2px solid #FFD700; 
+      padding: 8px;
+      text-align: center;
+    }
+  </style>
+  <title>High-Scores</title>
 </head>
 <body>
+  <h1>High-Scores!</h1>
 
-  <h1>Template</h1>
-  
-  <p>This is a blank template for a web page.</p>
-  
+  <table>
+    <thead>
+      <tr>
+        <th>Player</th>
+        <th>Score</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Player 1</td>
+        <td>200</td>
+      </tr>
+      <tr>
+        <td>Player 2</td>
+        <td>150</td>
+      </tr>
+      <!-- add more rows as needed -->
+    </tbody>
+  </table>
 </body>
 </html>
