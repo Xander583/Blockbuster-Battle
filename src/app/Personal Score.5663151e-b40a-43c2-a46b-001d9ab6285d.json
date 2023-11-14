@@ -1,4 +1,5 @@
 {
+    "id": "5663151e-b40a-43c2-a46b-001d9ab6285d",
     "type": "Screen",
     "translatedName": "Screen",
     "reactType": "ViewWithProps",
@@ -636,17 +637,17 @@
             "translatedName": "Label",
             "reactType": "Text",
             "properties": {
-                "Text": "Priscilla",
+                "Text": "Five Nights at Freddy's",
                 "FontSize": 18,
                 "CustomFont": "",
                 "LineHeight": 1,
                 "Color": "rgba(0, 0, 0, 1)",
-                "Height": 28,
-                "Width": 315,
+                "Height": 30,
+                "Width": 317,
                 "Visible": true,
-                "X": 27,
+                "X": 27.80000114440918,
                 "Y": 391,
-                "RelativeX": 27,
+                "RelativeX": 27.80000114440918,
                 "RelativeY": 391,
                 "ResizeMode": "STRETCH",
                 "style": {
@@ -688,8 +689,8 @@
                 },
                 "ParentId": "5663151e-b40a-43c2-a46b-001d9ab6285d",
                 "position": "absolute",
-                "edgeOffsets": 391.80001831054693,
-                "children": "Priscilla"
+                "edgeOffsets": 391.8000183105469,
+                "children": "Five Nights at Freddy's"
             },
             "children": [],
             "id": "8751e9bd-a492-4f1d-ba51-5ec043946a7d",
@@ -1433,7 +1434,6 @@
             "name": "Data_Viewer_List2"
         }
     ],
-    "id": "5663151e-b40a-43c2-a46b-001d9ab6285d",
     "thunkableVersion": 428,
     "name": "Personal Score"
 }
