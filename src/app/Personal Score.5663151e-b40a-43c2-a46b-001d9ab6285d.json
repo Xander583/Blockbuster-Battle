@@ -620,7 +620,7 @@
             "translatedName": "Label",
             "reactType": "Text",
             "properties": {
-                "Text": "Five Nights at Freddy's",
+                "Text": "Priscilla",
                 "FontSize": 18,
                 "CustomFont": "",
                 "LineHeight": 1,
@@ -672,7 +672,7 @@
                 "ParentId": "5663151e-b40a-43c2-a46b-001d9ab6285d",
                 "position": "absolute",
                 "edgeOffsets": 391.8000183105469,
-                "children": "Five Nights at Freddy's"
+                "children": "Priscilla"
             },
             "children": [],
             "id": "8751e9bd-a492-4f1d-ba51-5ec043946a7d",
