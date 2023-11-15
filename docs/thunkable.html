@@ -8,7 +8,7 @@
   <link href = "style.css" type="text/css" rel = "stylesheet" />
 
 
-  <!-- Link google font usage-->
+   <!-- Link google font usage-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dela+Gothic+One&display=swap" rel="stylesheet">
@@ -19,57 +19,18 @@
 
   <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap" rel="stylesheet">
   <title>Document</title>
   <style>
 
-    body {text-align: center;
-      margin-bottom: auto;
-    }
-    div{
-      max-width: 800px;
-      margin: auto;
-      position: center;
-    }
-    body {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-    }
 
-    .main-content {
-    text-align: center;
-    border: 2px solid #cccccc;
-    padding: 20px;
-    border-radius: 8px;
-    background-color: #111211;
-    color: rgb(255, 223, 0);
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-  }
 
-    .button-container {
-      text-align: center;
-    }
 
-    .button {
-      display: block;
-      padding: 30px 0px; 
-      text-align: center;
-      text-decoration: none;
-      font-size: 20px; 
-      cursor: pointer;
-      border: 2px solid #cccccc;
-      border-radius: 8px; 
-      margin: 10px;
-      background-color: #111211; 
-      color: rgb(255, 223, 0); 
-    }
-    
-    #firstPerson {position: center; float: left; width: 35%; background-color: #c4820b; color: #1e55c9;}
-    #secondPerson {position: center; float: right; width: 35%; background-color: #c4820b; color: #1e55c9;}
+
+
+
+
+
 
 
     input {width: 120px;}
@@ -83,71 +44,51 @@
 
 
   <!-- header class for title, logo, etc  -->
-<div class = "header">
+  <div class = "header">
 
-  <h1 id = "WebTitle">
+    <h1 id = "WebTitle">
       BlockBuster Battle
-  </h1>
+    </h1>
 
-  <!-- Change here for image  -->
-  <img src = "../img/Banner.png" width = "400" height="200">
-</div>
+    <!-- Change here for image  -->
+
+  </div>
   <!-- id's and people info  -->
-<div id ="firstPerson" width = "200">
   <div class="button-container">
     <button class="button" onclick="window.location.href='https://xander583.github.io/Blockbuster-Battle/high_score.html'"> High Score Page</button>
     <button class="button" onclick="window.location.href='https://xander583.github.io/Blockbuster-Battle/main_page.html'"> Main Page</button>
   </div>
-
-  <h1>First Person</h1>
-
-  <h3 id = "dataName" type = "text"></h3>
-  <h3 id="birthday" type="text"></h3>
-  <h3 id="animal" type="text"></h3>
-  <h3 id="food" type="text"></h3>
-  <img id = "image" src= " " width = "200" height="200">
-
-</div>
-
-<div id = "secondPerson">
-  <h1>Second Person</h1>
-  <h3 id = "dataName2" type = "text"></h3>
-  <h3 id="birthday2" type="text"></h3>
-  <h3 id="animal2" type="text"></h3>
-  <h3 id="food2" type="text"></h3>
-  <img id = "image2" src= " " width = "200" height="200">
-
-</div>
+  <img src = "img/FNAF.png" width = "300" height="200">
 
   <!-- thunkable embed -->
-<iframe src="https://thunkable.site/w/LLET2l0UmDrJ5rrJI9b0Z" title="blockbuster-battle" height = 700 width = 700></iframe>
+  <iframe src="https://thunkable.site/w/LLET2l0UmDrJ5rrJI9b0Z" title="blockbuster-battle" height = 700 width = 700></iframe>
 
-<!-- import statement  -->
-<script type="module">
+  <!-- import statement  -->
+  <script type="module">
 
-  //import box office scrapper -------------------------------------------------------------------------------------------box office scrapper
-  const fs = require('fs');
-  const https = require('https');
-  const jsdom = require('jsdom');
-  const { JSDOM } = jsdom;
-  const { window } = new JSDOM();
+    //import box office scrapper -------------------------------------------------------------------------------------------box office scrapper
+    const fs = require('fs');
+    const https = require('https');
+    const jsdom = require('jsdom');
+    const { JSDOM } = jsdom;
+    const { window } = new JSDOM();
 
-  const BASE_DIR = __dirname;
+    const BASE_DIR = __dirname;
 
-  function urlToTxt(url, filename = 'weekly.html', save = false) 
-  {
-    return new Promise((resolve, reject) =>
+    function urlToTxt(url, filename = 'weekly.html', save = false)
     {
-        https.get(url, (res) => 
+      return new Promise((resolve, reject) =>
+      {
+        https.get(url, (res) =>
         {
           let data = '';
-          res.on('data', (chunk) => 
+          res.on('data', (chunk) =>
           {
             data += chunk;
           });
           res.on('end', () =>
           {
-            if (res.statusCode === 200) 
+            if (res.statusCode === 200)
             {
               const htmlText = data;
               if (save)
@@ -155,63 +96,63 @@
                 fs.writeFileSync(filename, htmlText, 'utf8');
               }
               resolve(htmlText);
-              } 
-              else
-              {
-                reject('Failed to fetch URL');
-              }
-            });
+            }
+            else
+            {
+              reject('Failed to fetch URL');
+            }
+          });
         });
-    });
-  }
-  async function parseAndExtract(url, weekNumber) 
-  {
-    try 
-    {
-      const htmlText = await urlToTxt(url);
-      const { document } = (new JSDOM(htmlText)).window;
-      const tableClass = '.imdb-scroll-table';
-      const rTable = document.querySelectorAll(tableClass);
-      const tableData = [];
-      let headerNames = [];
-      if (rTable.length === 0) 
-      {
-         return false;
-      }
-      const parsedTable = rTable[0];
-      const rows = parsedTable.querySelectorAll('tr');
-      const headerRow = rows[0];
-      const headerCols = headerRow.querySelectorAll('th');
-      headerNames = Array.from(headerCols).map((x) => x.textContent);
-      for (let i = 1; i < rows.length; i++)
-      {
-        const cols = rows[i].querySelectorAll('td');
-        const rowData = Array.from(cols).map((col) => col.textContent);
-        tableData.push(rowData);
-      }
-      const jsonData = tableData.map((row) =>
-      row.reduce((obj, value, index) =>
-      {
-        obj[headerNames[index]] = value;
-        return obj;
-      }, {}));
-      const filePath = `${BASE_DIR}/data/week-${weekNumber}.json`;
-      fs.mkdirSync(`${BASE_DIR}/data`, { recursive: true });
-      fs.writeFileSync(filePath, JSON.stringify(jsonData, null, 2), 'utf8');
-      return true;
-    } 
-    catch (error) 
-    {
-      console.error(error);
-      return false;
+      });
     }
-  }
-
-  function run(startWeek, weeksAgo)
-  {
-    const now = new Date();
-    for (let i = 0; i <= weeksAgo; i++)
+    async function parseAndExtract(url, weekNumber)
     {
+      try
+      {
+        const htmlText = await urlToTxt(url);
+        const { document } = (new JSDOM(htmlText)).window;
+        const tableClass = '.imdb-scroll-table';
+        const rTable = document.querySelectorAll(tableClass);
+        const tableData = [];
+        let headerNames = [];
+        if (rTable.length === 0)
+        {
+          return false;
+        }
+        const parsedTable = rTable[0];
+        const rows = parsedTable.querySelectorAll('tr');
+        const headerRow = rows[0];
+        const headerCols = headerRow.querySelectorAll('th');
+        headerNames = Array.from(headerCols).map((x) => x.textContent);
+        for (let i = 1; i < rows.length; i++)
+        {
+          const cols = rows[i].querySelectorAll('td');
+          const rowData = Array.from(cols).map((col) => col.textContent);
+          tableData.push(rowData);
+        }
+        const jsonData = tableData.map((row) =>
+                row.reduce((obj, value, index) =>
+                {
+                  obj[headerNames[index]] = value;
+                  return obj;
+                }, {}));
+        const filePath = `${BASE_DIR}/data/week-${weekNumber}.json`;
+        fs.mkdirSync(`${BASE_DIR}/data`, { recursive: true });
+        fs.writeFileSync(filePath, JSON.stringify(jsonData, null, 2), 'utf8');
+        return true;
+      }
+      catch (error)
+      {
+        console.error(error);
+        return false;
+      }
+    }
+
+    function run(startWeek, weeksAgo)
+    {
+      const now = new Date();
+      for (let i = 0; i <= weeksAgo; i++)
+      {
         const startDate = new Date(now);
         startDate.setDate(now.getDate() - i * 7);
         const year = startDate.getFullYear();
@@ -219,118 +160,141 @@
         const weekNumberStr = `${year}W${weekNumber}`;
         const url = `https://www.boxofficemojo.com/weekly/${weekNumberStr}/`;
         parseAndExtract(url, weekNumberStr)
-            .then((finished) =>
-            {
-                if (finished)
+                .then((finished) =>
                 {
-                  console.log(`Finished week ${weekNumberStr}`);
-                }
-                else
-                {
-                  console.log(`Week ${weekNumberStr} not finished`);
-                }
-            })
-            .catch((error) => console.error(error));
+                  if (finished)
+                  {
+                    console.log(`Finished week ${weekNumberStr}`);
+                  }
+                  else
+                  {
+                    console.log(`Week ${weekNumberStr} not finished`);
+                  }
+                })
+                .catch((error) => console.error(error));
+      }
     }
-  }
-  const args = process.argv.slice(2);
-  const count = args.length > 0 ? parseInt(args[0]) : 0;
-  run(null, count);
+    const args = process.argv.slice(2);
+    const count = args.length > 0 ? parseInt(args[0]) : 0;
+    run(null, count);
 
 
 
-  // Import the functions you need from the SDKs you need                                     -------------------------------------this is database now
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
+    // Import the functions you need from the SDKs you need                                     -------------------------------------this is database now
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-  apiKey: "AIzaSyB1AvHecofSrFGgCpnJv8VykCgygHxjlrM",
-  authDomain: "blockbuster-battle.firebaseapp.com",
-  databaseURL: "https://blockbuster-battle-default-rtdb.firebaseio.com",
-  projectId: "blockbuster-battle",
-  storageBucket: "blockbuster-battle.appspot.com",
-  messagingSenderId: "451896778802",
-  appId: "1:451896778802:web:7d6280dd271d32fc13dc2b",
-  measurementId: "G-SJMQM8H0QJ"
-  };
-
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyB1AvHecofSrFGgCpnJv8VykCgygHxjlrM",
+      authDomain: "blockbuster-battle.firebaseapp.com",
+      databaseURL: "https://blockbuster-battle-default-rtdb.firebaseio.com",
+      projectId: "blockbuster-battle",
+      storageBucket: "blockbuster-battle.appspot.com",
+      messagingSenderId: "451896778802",
+      appId: "1:451896778802:web:7d6280dd271d32fc13dc2b",
+      measurementId: "G-SJMQM8H0QJ"
+    };
 
 
-
-
-  //THIS IS WHERE YOU PASTE THE CODE TO CONNECT TO YOUR OWN DATABASE
-  //Copy and paste the CDN bit of code from your app that you created on Firebase.
-  //The script tag above is already there, so careful not to have duplicate script tags.
-  //After you've copied and pasted, just delete the unnecessary script tags.
-
-
-  import {getDatabase, ref, get, set, child, update, remove}
-    from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js"
-  //Copy and Paste the URL from near the top of the CDN you pasted in from firebase
-  // (the one where you imported "initializeApp" from),
-  //but change "firebase-app" to "firebase-database"
-
-
-  const db = getDatabase();
-
-  var enterID = document.querySelector("#enterID");
-  var enterName = document.querySelector("#enterName");
-  var enterAge = document.querySelector("#enterAge");
-  var findID = document.querySelector("#findID");
-  var findName = document.querySelector("#findName");
-  var findAge = document.querySelector("#findAge");
-
-
-
-  var birthday = document.querySelector("#birthday");
-  var dataName = document.querySelector("#dataName");
-  var image = document.querySelector("#image");
-  var animal = document.querySelector("#animal");
-  var food = document.querySelector("#food");
-
-
-
-  var birthday2 = document.querySelector("#birthday2");
-  var dataName2 = document.querySelector("#dataName2");
-  var image2 = document.querySelector("#image2");
-  var animal2 = document.querySelector("#animal2");
-  var food2 = document.querySelector("#food2");
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
 
 
 
 
+    //THIS IS WHERE YOU PASTE THE CODE TO CONNECT TO YOUR OWN DATABASE
+    //Copy and paste the CDN bit of code from your app that you created on Firebase.
+    //The script tag above is already there, so careful not to have duplicate script tags.
+    //After you've copied and pasted, just delete the unnecessary script tags.
 
-  <!-- Functions not used  -->
-  function InsertData() {
-    set(ref(db, "People/"+ enterID.value),{
-      Name: enterName.value,
-      ID: enterID.value,
-      Age: enterAge.value
-    })
-            .then(()=>{
-              alert("Data added successfully");
-            })
-            .catch((error)=>{
-              alert(error);
-            });
-  }
 
-  function FindData() {
+    import {getDatabase, ref, get, set, child, update, remove}
+      from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js"
+    //Copy and Paste the URL from near the top of the CDN you pasted in from firebase
+    // (the one where you imported "initializeApp" from),
+    //but change "firebase-app" to "firebase-database"
+
+
+    const db = getDatabase();
+
+    var enterID = document.querySelector("#enterID");
+    var enterName = document.querySelector("#enterName");
+    var enterAge = document.querySelector("#enterAge");
+    var findID = document.querySelector("#findID");
+    var findName = document.querySelector("#findName");
+    var findAge = document.querySelector("#findAge");
+
+
+
+    var birthday = document.querySelector("#birthday");
+    var dataName = document.querySelector("#dataName");
+    var image = document.querySelector("#image");
+    var animal = document.querySelector("#animal");
+    var food = document.querySelector("#food");
+
+
+
+    var birthday2 = document.querySelector("#birthday2");
+    var dataName2 = document.querySelector("#dataName2");
+    var image2 = document.querySelector("#image2");
+    var animal2 = document.querySelector("#animal2");
+    var food2 = document.querySelector("#food2");
+
+
+
+
+
+    <!-- Functions not used  -->
+    function InsertData() {
+      set(ref(db, "People/"+ enterID.value),{
+        Name: enterName.value,
+        ID: enterID.value,
+        Age: enterAge.value
+      })
+              .then(()=>{
+                alert("Data added successfully");
+              })
+              .catch((error)=>{
+                alert(error);
+              });
+    }
+
+    function FindData() {
+      const dbref = ref(db);
+
+      get(child(dbref, "People/" + findID.value))
+              .then((snapshot)=>{
+                if(snapshot.exists()){
+                  findName.innerHTML = "Name: " + snapshot.val().Name;
+                  findAge.innerHTML = "Age: " + snapshot.val().Age;
+                } else {
+                  alert("No data found");
+                }
+              })
+              .catch((error)=>{
+                alert(error)
+              })
+
+    }
+
+
     const dbref = ref(db);
 
-    get(child(dbref, "People/" + findID.value))
+    get (child(dbref, "OIoXByEinqYrT9IJSorrlFLkev13/"))
             .then((snapshot)=>{
               if(snapshot.exists()){
-                findName.innerHTML = "Name: " + snapshot.val().Name;
-                findAge.innerHTML = "Age: " + snapshot.val().Age;
+                dataName.innerHTML = "name: " + snapshot.val().name;
+                birthday.innerHTML = "birthday: " + snapshot.val().birthday;
+                animal.innerHTML = "Favorite Animal: " + snapshot.val().animal;
+                food.innerHTML = "Favorite Food: " + snapshot.val().food;
+
+                image.src = snapshot.val().image;
+
               } else {
                 alert("No data found");
               }
@@ -339,88 +303,65 @@
               alert(error)
             })
 
-  }
-
-
-  const dbref = ref(db);
-
-  get (child(dbref, "OIoXByEinqYrT9IJSorrlFLkev13/"))
-          .then((snapshot)=>{
-            if(snapshot.exists()){
-              dataName.innerHTML = "name: " + snapshot.val().name;
-              birthday.innerHTML = "birthday: " + snapshot.val().birthday;
-              animal.innerHTML = "Favorite Animal: " + snapshot.val().animal;
-              food.innerHTML = "Favorite Food: " + snapshot.val().food;
-
-              image.src = snapshot.val().image;
-
-            } else {
-              alert("No data found");
-            }
-          })
-          .catch((error)=>{
-            alert(error)
-          })
 
 
 
 
+    get (child(dbref, "gY3Vbkh8yfVnAEa4mf7vuVgxxb83/"))
+            .then((snapshot)=>{
+              if(snapshot.exists()){
+                dataName2.innerHTML = "name: " + snapshot.val().name;
 
-  get (child(dbref, "gY3Vbkh8yfVnAEa4mf7vuVgxxb83/"))
-          .then((snapshot)=>{
-            if(snapshot.exists()){
-              dataName2.innerHTML = "name: " + snapshot.val().name;
+                birthday2.innerHTML = "birthday: " + snapshot.val().birthday;
+                animal2.innerHTML = "Favorite Animal: " + snapshot.val().animal;
+                food2.innerHTML = "Favorite Food: " + snapshot.val().food;
 
-              birthday2.innerHTML = "birthday: " + snapshot.val().birthday;
-              animal2.innerHTML = "Favorite Animal: " + snapshot.val().animal;
-              food2.innerHTML = "Favorite Food: " + snapshot.val().food;
+                image2.src = snapshot.val().image;
 
-              image2.src = snapshot.val().image;
-
-            } else {
-              alert("No data found");
-            }
-          })
-          .catch((error)=>{
-            alert(error)
-          })
-
-
-
-
-
-
-
-
-  function UpdateData(){
-    update(ref(db, "People/"+ enterID.value),{
-      Name: enterName.value,
-      Age: enterAge.value
-    })
-            .then(()=>{
-              alert("Data updated successfully");
+              } else {
+                alert("No data found");
+              }
             })
             .catch((error)=>{
-              alert(error);
-            });
-  }
-
-  function RemoveData(){
-    remove(ref(db, "People/"+ enterID.value))
-            .then(()=>{
-              alert("Data deleted successfully");
+              alert(error)
             })
-            .catch((error)=>{
-              alert(error);
-            });
-  }
 
-  insertBtn.addEventListener('click', InsertData);
-  updateBtn.addEventListener('click', UpdateData);
-  removeBtn.addEventListener('click', RemoveData);
-  findBtn.addEventListener('click', FindData);
 
-</script>
+
+
+
+
+
+
+    function UpdateData(){
+      update(ref(db, "People/"+ enterID.value),{
+        Name: enterName.value,
+        Age: enterAge.value
+      })
+              .then(()=>{
+                alert("Data updated successfully");
+              })
+              .catch((error)=>{
+                alert(error);
+              });
+    }
+
+    function RemoveData(){
+      remove(ref(db, "People/"+ enterID.value))
+              .then(()=>{
+                alert("Data deleted successfully");
+              })
+              .catch((error)=>{
+                alert(error);
+              });
+    }
+
+    insertBtn.addEventListener('click', InsertData);
+    updateBtn.addEventListener('click', UpdateData);
+    removeBtn.addEventListener('click', RemoveData);
+    findBtn.addEventListener('click', FindData);
+
+  </script>
 
 
 </div>
