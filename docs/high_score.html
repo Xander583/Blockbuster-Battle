@@ -2,58 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <style>
-    body {
-      background-color: #000; 
-      color: #FFD700;
-      margin: 0; 
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      height: 100vh;
-    }
+    <!-- Link css-->
+  <link href = "style.css" type="text/css" rel = "stylesheet" />
+   <!-- Link google font usage-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dela+Gothic+One&display=swap" rel="stylesheet">
 
-    h1 {
-      font-size: 2em;
-      margin-top: 20px; 
-    }
 
-    table {
-      border-collapse: collapse;
-      width: 80%; 
-      margin-top: 20px;
-    }
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
 
-    th, td {
-      border: 2px solid #FFD700; 
-      padding: 8px;
-      text-align: center;
-    }
-  </style>
-  <title>High-Scores</title>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap" rel="stylesheet">
+
+    <title>BlockBuster Battle</title>
+    <style>
+
+
+    </style>
+    <title>High-Scores</title>
 </head>
 <body>
-  <h1>High-Scores!</h1>
+<div class = "main-content">
 
-  <table>
+
+    <!-- header class for title, logo, etc  -->
+    <div class = "header">
+
+        <h1 id = "WebTitle">
+            High-Scores!
+        </h1>
+
+        <!-- Change here for image  -->
+
+    </div>
+    <div class="button-container">
+
+        <button class="button" onclick="window.location.href='https://xander583.github.io/Blockbuster-Battle/main_page.html'"> Main Page</button>
+        <button class="button" onclick="window.location.href='https://xander583.github.io/Blockbuster-Battle/thunkable.html'"> Thunkable App Page</button>
+    </div>
+
+
+
+<table>
     <thead>
-      <tr>
+    <tr>
         <th>Player</th>
         <th>Score</th>
-      </tr>
+    </tr>
     </thead>
     <tbody>
-      <tr>
+    <tr>
         <td>Player 1</td>
         <td>200</td>
-      </tr>
-      <tr>
+    </tr>
+    <tr>
         <td>Player 2</td>
         <td>150</td>
-      </tr>
-      <!-- add more rows as needed -->
+    </tr>
+    <!-- add more rows as needed -->
     </tbody>
-  </table>
+</table>
+
+</div>
 </body>
 </html>
