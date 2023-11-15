@@ -9,7 +9,18 @@
             },
             "assets": {},
             "backendUpgradeVersion": 23,
-            "blockly": {},
+            "blockly": {
+                "e72ee61c-21b5-486b-b58a-5fcad0b91985": {
+                    "xml": "",
+                    "permissions": {
+                        "android": [],
+                        "ios": []
+                    },
+                    "enabledFeatures": {
+                        "iap": false
+                    }
+                }
+            },
             "categories": [
                 "Education"
             ],
@@ -44,7 +55,7 @@
             "projectName": "BlockBuster-Battle v2.0",
             "settings": {
                 "teamId": null,
-                "appName": null,
+                "appName": "BlockBuster Battle",
                 "icon": null,
                 "autoIncrementVersion": true,
                 "ignoreNotchArea": false,
@@ -53,8 +64,8 @@
                 "androidVersionCode": 1,
                 "iosVersionNumber": "1",
                 "iosBuildNumber": "1",
-                "firebaseAPIKey": null,
-                "firebaseDatabaseURL": null,
+                "firebaseAPIKey": "AIzaSyB1AvHecofSrFGgCpnJv8VykCgygHxjlrM",
+                "firebaseDatabaseURL": "https://blockbuster-battle-default-rtdb.firebaseio.com/",
                 "stripePublishableKeyTest": null,
                 "stripePublishableKeyLive": null,
                 "stripeAccountId": null,
@@ -82,13 +93,13 @@
                 "appleOAuthWebClientID": null,
                 "appleOAuthWebRedirectURI": null,
                 "admobAppIdIOS": null,
-                "admobAppIdAndroid": null,
+                "admobAppIdAndroid": "ca-app-pub-3940256099942544/6300978111",
                 "admobUserTrackingUsageDescription": null,
                 "__typename": "ProjectSettings"
             },
             "projectSettings": {
                 "teamId": null,
-                "appName": null,
+                "appName": "BlockBuster Battle",
                 "icon": null,
                 "autoIncrementVersion": true,
                 "ignoreNotchArea": false,
@@ -97,8 +108,8 @@
                 "androidVersionCode": 1,
                 "iosVersionNumber": "1",
                 "iosBuildNumber": "1",
-                "firebaseAPIKey": null,
-                "firebaseDatabaseURL": null,
+                "firebaseAPIKey": "AIzaSyB1AvHecofSrFGgCpnJv8VykCgygHxjlrM",
+                "firebaseDatabaseURL": "https://blockbuster-battle-default-rtdb.firebaseio.com/",
                 "stripePublishableKeyTest": null,
                 "stripePublishableKeyLive": null,
                 "stripeAccountId": null,
@@ -126,7 +137,7 @@
                 "appleOAuthWebClientID": null,
                 "appleOAuthWebRedirectURI": null,
                 "admobAppIdIOS": null,
-                "admobAppIdAndroid": null,
+                "admobAppIdAndroid": "ca-app-pub-3940256099942544/6300978111",
                 "admobUserTrackingUsageDescription": null,
                 "__typename": "ProjectSettings"
             },
@@ -142,7 +153,33 @@
             "totalCopy": "0",
             "totalStar": "0",
             "starAction": "star",
-            "variables": {},
+            "variables": {
+                "ae1fce62-8456-4575-8bf9-934a1f2e479c": {
+                    "scope": "APP",
+                    "name": "password",
+                    "screenId": "e72ee61c-21b5-486b-b58a-5fcad0b91985"
+                },
+                "f26ac88c-3b1f-4a41-ab6f-e2644fbfd10a": {
+                    "scope": "STORED",
+                    "name": "email",
+                    "screenId": "e72ee61c-21b5-486b-b58a-5fcad0b91985"
+                },
+                "2a5a3b9f-ae07-47c4-aa21-bca46a66a5bc": {
+                    "scope": "APP",
+                    "name": "user id",
+                    "screenId": "e72ee61c-21b5-486b-b58a-5fcad0b91985"
+                },
+                "9a66a379-ab84-4091-85ba-e84b035ee934": {
+                    "scope": "APP",
+                    "name": "session email",
+                    "screenId": "e72ee61c-21b5-486b-b58a-5fcad0b91985"
+                },
+                "807fe6d0-953f-4380-a0c0-c7a0cd43cae6": {
+                    "scope": "APP",
+                    "name": "currentlySigningUp",
+                    "screenId": "e72ee61c-21b5-486b-b58a-5fcad0b91985"
+                }
+            },
             "defaultDesignerDevice": "PHONE",
             "defaultDesignerOrientation": "PORTRAIT",
             "schemaVersion": 2,
