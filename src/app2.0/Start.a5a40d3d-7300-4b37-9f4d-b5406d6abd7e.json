@@ -1,4 +1,5 @@
 {
+    "id": "a5a40d3d-7300-4b37-9f4d-b5406d6abd7e",
     "type": "Screen",
     "translatedName": "Screen",
     "reactType": "ViewWithProps",
@@ -54,7 +55,6 @@
         "tabNavigationOptions": {}
     },
     "children": [],
-    "id": "a5a40d3d-7300-4b37-9f4d-b5406d6abd7e",
     "thunkableVersion": 430,
     "name": "Start"
 }
