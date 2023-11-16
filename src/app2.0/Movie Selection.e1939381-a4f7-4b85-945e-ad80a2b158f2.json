@@ -1,4 +1,5 @@
 {
+    "id": "e1939381-a4f7-4b85-945e-ad80a2b158f2",
     "type": "Screen",
     "translatedName": "Screen",
     "reactType": "ViewWithProps",
@@ -29,7 +30,8 @@
             "flexDirection": "column",
             "justifyContent": "center",
             "alignItems": "center",
-            "display": "flex"
+            "display": "flex",
+            "backgroundColor": "rgba(74, 74, 74, 1)"
         },
         "ShowStatusBar": true,
         "StatusBarStyle": "default",
@@ -51,10 +53,10 @@
         "navigationOptions": {
             "headerStyle": {}
         },
-        "tabNavigationOptions": {}
+        "tabNavigationOptions": {},
+        "BackgroundColor": "rgba(74, 74, 74, 1)"
     },
     "children": [],
-    "id": "e1939381-a4f7-4b85-945e-ad80a2b158f2",
     "thunkableVersion": 430,
     "name": "Movie Selection"
 }
