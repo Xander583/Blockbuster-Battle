@@ -1,4 +1,5 @@
 {
+    "id": "95e96a95-5986-4fb5-99fc-1953230b96fe",
     "type": "Screen",
     "translatedName": "Screen",
     "reactType": "ViewWithProps",
@@ -1285,7 +1286,6 @@
             "name": "User Icon"
         }
     ],
-    "id": "95e96a95-5986-4fb5-99fc-1953230b96fe",
     "thunkableVersion": 430,
     "name": "Icon Screen"
 }

@@ -1,4 +1,5 @@
 {
+    "id": "d74f9324-3502-4c27-ada8-9ad45a30e0b1",
     "type": "Screen",
     "translatedName": "Screen",
     "reactType": "ViewWithProps",
@@ -439,18 +440,18 @@
             "type": "Button",
             "translatedName": "Button",
             "properties": {
-                "Text": "Change",
+                "Text": "check score",
                 "TextColor": "rgba(74, 74, 74, 1)",
-                "FontSize": 24,
+                "FontSize": 16,
                 "CustomFont": "",
                 "BackgroundColor": "rgba(248, 231, 28, 1)",
-                "Height": 51,
-                "Width": 107,
+                "Height": 48,
+                "Width": 106,
                 "Visible": true,
-                "X": 249,
-                "Y": 121,
-                "RelativeX": 249,
-                "RelativeY": 121,
+                "X": 239,
+                "Y": 64,
+                "RelativeX": 239,
+                "RelativeY": 64,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "marginTop": 0,
@@ -481,7 +482,61 @@
                 "Disabled": false,
                 "ParentId": "d74f9324-3502-4c27-ada8-9ad45a30e0b1",
                 "position": "absolute",
-                "edgeOffsets": 121
+                "edgeOffsets": 64
+            },
+            "children": [],
+            "id": "39a9d4f2-b1c4-45df-ab02-9f3f87a35ca3",
+            "thunkableVersion": 430,
+            "bindings": null,
+            "name": "check score"
+        },
+        {
+            "type": "Button",
+            "translatedName": "Button",
+            "properties": {
+                "Text": "Change",
+                "TextColor": "rgba(74, 74, 74, 1)",
+                "FontSize": 24,
+                "CustomFont": "",
+                "BackgroundColor": "rgba(248, 231, 28, 1)",
+                "Height": 48,
+                "Width": 106,
+                "Visible": true,
+                "X": 239,
+                "Y": 123,
+                "RelativeX": 239,
+                "RelativeY": 123,
+                "ResizeMode": "STRETCH",
+                "style": {
+                    "marginTop": 0,
+                    "marginBottom": 0,
+                    "marginLeft": 0,
+                    "marginRight": 0,
+                    "paddingTop": 0,
+                    "paddingBottom": 0,
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "borderRadius": 15,
+                    "shadowColor": "rgba(0, 0, 0, 0)",
+                    "shadowOpacity": 0,
+                    "scaledShadowOpacity": 0,
+                    "shadowRadius": 0,
+                    "shadowOffset": {
+                        "width": 0,
+                        "height": 0
+                    },
+                    "position": "absolute",
+                    "left": "58.266666666666666%",
+                    "top": "24.707644346771925%",
+                    "display": "flex"
+                },
+                "FontBold": true,
+                "FontItalic": false,
+                "Raised": false,
+                "Disabled": false,
+                "ParentId": "d74f9324-3502-4c27-ada8-9ad45a30e0b1",
+                "position": "absolute",
+                "edgeOffsets": 123
             },
             "children": [],
             "id": "95cc5be2-3eab-4af1-a27d-f3d8237aba12",
@@ -689,7 +744,6 @@
             "name": "BB Name"
         }
     ],
-    "id": "d74f9324-3502-4c27-ada8-9ad45a30e0b1",
     "thunkableVersion": 430,
     "name": "Profile Screen"
 }
