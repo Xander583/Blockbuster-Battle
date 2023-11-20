@@ -484,7 +484,16 @@
                         "iap": false
                     }
                 },
-                "60fbc62a-42e2-4016-84f1-1445a88c5db2": {}
+                "60fbc62a-42e2-4016-84f1-1445a88c5db2": {
+                    "xml": "",
+                    "permissions": {
+                        "android": [],
+                        "ios": []
+                    },
+                    "enabledFeatures": {
+                        "iap": false
+                    }
+                }
             },
             "categories": [
                 "Education"
@@ -614,7 +623,161 @@
             "hasBluetoothLowEnergy": null,
             "hasPushNotification": false,
             "hasAssistant": null,
-            "dataSourceLinks": [],
+            "dataSourceLinks": [
+                {
+                    "id": "65598082fc11c0874cd02763",
+                    "dataSource": {
+                        "id": "654d0f87da1eb2965e0a171d",
+                        "name": "BlockbusterOptions",
+                        "configuration": {
+                            "id": "654d0f87b736fad7ca82eecd",
+                            "type": "GOOGLE_SHEETS",
+                            "__typename": "GoogleSheetsDataSourceConfiguration"
+                        },
+                        "collections": [
+                            {
+                                "id": "654d0f88da1eb2965e0a172d",
+                                "name": "0",
+                                "label": "Sheet1",
+                                "fields": [
+                                    {
+                                        "id": "654d0f88da1eb2965e0a172e",
+                                        "name": "2031140646-0",
+                                        "label": "Title",
+                                        "type": "STRING",
+                                        "__typename": "DataSourceField"
+                                    },
+                                    {
+                                        "id": "654d0f88da1eb2965e0a172f",
+                                        "name": "891860460-1",
+                                        "label": "Release Date",
+                                        "type": "STRING",
+                                        "__typename": "DataSourceField"
+                                    }
+                                ],
+                                "__typename": "DataSourceCollection"
+                            }
+                        ],
+                        "__typename": "DataSource"
+                    },
+                    "__typename": "DataSourceLink"
+                },
+                {
+                    "id": "655980dfdba4d744c0157796",
+                    "dataSource": {
+                        "id": "65561fd8b7b6a3aeaf931ba4",
+                        "name": "BlockbusterTest",
+                        "configuration": {
+                            "id": "65561fd89e1979d41dfcafa3",
+                            "type": "GOOGLE_SHEETS",
+                            "__typename": "GoogleSheetsDataSourceConfiguration"
+                        },
+                        "collections": [
+                            {
+                                "id": "65561fd9b7b6a3aeaf931e14",
+                                "name": "989045603",
+                                "label": "week-2023W42",
+                                "fields": [
+                                    {
+                                        "id": "65561fd9b7b6a3aeaf931e15",
+                                        "name": "928218008-0",
+                                        "label": "Rank",
+                                        "type": "NUMBER",
+                                        "__typename": "DataSourceField"
+                                    },
+                                    {
+                                        "id": "65561fd9b7b6a3aeaf931e16",
+                                        "name": "229801199-1",
+                                        "label": "LW",
+                                        "type": "STRING",
+                                        "__typename": "DataSourceField"
+                                    },
+                                    {
+                                        "id": "65561fd9b7b6a3aeaf931e17",
+                                        "name": "1834881665-2",
+                                        "label": "Release",
+                                        "type": "STRING",
+                                        "__typename": "DataSourceField"
+                                    },
+                                    {
+                                        "id": "65561fd9b7b6a3aeaf931e18",
+                                        "name": "1431070081-3",
+                                        "label": "Gross",
+                                        "type": "STRING",
+                                        "__typename": "DataSourceField"
+                                    },
+                                    {
+                                        "id": "65561fd9b7b6a3aeaf931e19",
+                                        "name": "1095524757-4",
+                                        "label": "%\u00b1 LW",
+                                        "type": "STRING",
+                                        "__typename": "DataSourceField"
+                                    },
+                                    {
+                                        "id": "65561fd9b7b6a3aeaf931e1a",
+                                        "name": "1364722827-5",
+                                        "label": "Theaters",
+                                        "type": "LATLNG",
+                                        "__typename": "DataSourceField"
+                                    },
+                                    {
+                                        "id": "65561fd9b7b6a3aeaf931e1b",
+                                        "name": "1434463283-6",
+                                        "label": "Change",
+                                        "type": "STRING",
+                                        "__typename": "DataSourceField"
+                                    },
+                                    {
+                                        "id": "65561fd9b7b6a3aeaf931e1c",
+                                        "name": "1298785996-7",
+                                        "label": "Average",
+                                        "type": "STRING",
+                                        "__typename": "DataSourceField"
+                                    },
+                                    {
+                                        "id": "65561fd9b7b6a3aeaf931e1d",
+                                        "name": "1053605772-8",
+                                        "label": "Total Gross",
+                                        "type": "STRING",
+                                        "__typename": "DataSourceField"
+                                    },
+                                    {
+                                        "id": "65561fd9b7b6a3aeaf931e1e",
+                                        "name": "1641319257-9",
+                                        "label": "Weeks",
+                                        "type": "NUMBER",
+                                        "__typename": "DataSourceField"
+                                    },
+                                    {
+                                        "id": "65561fd9b7b6a3aeaf931e1f",
+                                        "name": "252818026-10",
+                                        "label": "Distributor",
+                                        "type": "STRING",
+                                        "__typename": "DataSourceField"
+                                    },
+                                    {
+                                        "id": "65561fd9b7b6a3aeaf931e20",
+                                        "name": "808593516-11",
+                                        "label": "New This Week",
+                                        "type": "BOOL",
+                                        "__typename": "DataSourceField"
+                                    },
+                                    {
+                                        "id": "65561fd9b7b6a3aeaf931e21",
+                                        "name": "1981746318-12",
+                                        "label": "Estimated",
+                                        "type": "BOOL",
+                                        "__typename": "DataSourceField"
+                                    }
+                                ],
+                                "__typename": "DataSourceCollection"
+                            }
+                        ],
+                        "__typename": "DataSource"
+                    },
+                    "__typename": "DataSourceLink"
+                }
+            ],
             "localDataSources": [],
             "customProperties": [],
             "modules": [],
