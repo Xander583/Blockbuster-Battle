@@ -20,10 +20,11 @@ div.main-content{
     margin: auto;
 
     text-align: center;
-    border: 2px solid #cccccc;
+    border: 2px solid #020202;
     padding: 20px;
     border-radius: 8px;
-    background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+                radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
     color: rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
@@ -64,7 +65,7 @@ div.main-content{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 25px;
     cursor: pointer;
-    border: 2px solid #cccccc;
+    border: 2px solid #000000;
     border-radius: 8px;
     margin: 10px;
     background-color: black; /* Darker background color */
@@ -107,7 +108,7 @@ th, td {
     border: 2px solid #FFD700;
     padding: 8px;
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 @media only screen and (max-width: 600px) {
@@ -121,4 +122,3 @@ th, td {
         font-size: 22px;
     }
 }
-
