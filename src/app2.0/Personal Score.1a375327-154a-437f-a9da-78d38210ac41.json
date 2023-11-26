@@ -84,13 +84,13 @@
                     "paddingLeft": 0,
                     "paddingRight": 0,
                     "borderRadius": 15,
-                    "shadowColor": "rgba(0, 0, 0, 0)",
-                    "shadowOpacity": 0,
+                    "shadowColor": "rgba(0, 0, 0, 1)",
+                    "shadowOpacity": 1,
                     "scaledShadowOpacity": 0,
-                    "shadowRadius": 0,
+                    "shadowRadius": 1,
                     "shadowOffset": {
-                        "width": 0,
-                        "height": 0
+                        "width": 3,
+                        "height": 3
                     },
                     "position": "absolute",
                     "left": "14.000004069010417%",
@@ -138,13 +138,13 @@
                     "paddingLeft": 0,
                     "paddingRight": 0,
                     "borderRadius": 15,
-                    "shadowColor": "rgba(0, 0, 0, 0)",
-                    "shadowOpacity": 0,
+                    "shadowColor": "rgba(0, 0, 0, 1)",
+                    "shadowOpacity": 1,
                     "scaledShadowOpacity": 0,
-                    "shadowRadius": 0,
+                    "shadowRadius": 1,
                     "shadowOffset": {
-                        "width": 0,
-                        "height": 0
+                        "width": 3,
+                        "height": 3
                     },
                     "position": "absolute",
                     "left": "14.000004069010417%",
@@ -864,10 +864,10 @@
                     "borderRadius": 0,
                     "borderColor": "rgba(236, 237, 237, 1)",
                     "borderStyle": "solid",
-                    "shadowColor": "rgba(0, 0, 0, 0)",
-                    "shadowOpacity": 0,
+                    "shadowColor": "rgba(0, 0, 0, 1)",
+                    "shadowOpacity": 1,
                     "scaledShadowOpacity": 0,
-                    "shadowRadius": 0,
+                    "shadowRadius": 1,
                     "shadowOffset": {
                         "width": 0,
                         "height": 0
@@ -930,10 +930,10 @@
                     "borderRadius": 0,
                     "borderColor": "rgba(236, 237, 237, 1)",
                     "borderStyle": "solid",
-                    "shadowColor": "rgba(0, 0, 0, 0)",
-                    "shadowOpacity": 0,
+                    "shadowColor": "rgba(0, 0, 0, 1)",
+                    "shadowOpacity": 1,
                     "scaledShadowOpacity": 0,
-                    "shadowRadius": 0,
+                    "shadowRadius": 1,
                     "shadowOffset": {
                         "width": 0,
                         "height": 0
@@ -996,10 +996,10 @@
                     "borderRadius": 0,
                     "borderColor": "rgba(236, 237, 237, 1)",
                     "borderStyle": "solid",
-                    "shadowColor": "rgba(0, 0, 0, 0)",
-                    "shadowOpacity": 0,
+                    "shadowColor": "rgba(0, 0, 0, 1)",
+                    "shadowOpacity": 1,
                     "scaledShadowOpacity": 0,
-                    "shadowRadius": 0,
+                    "shadowRadius": 1,
                     "shadowOffset": {
                         "width": 0,
                         "height": 0
@@ -1062,10 +1062,10 @@
                     "borderRadius": 0,
                     "borderColor": "rgba(236, 237, 237, 1)",
                     "borderStyle": "solid",
-                    "shadowColor": "rgba(0, 0, 0, 0)",
-                    "shadowOpacity": 0,
+                    "shadowColor": "rgba(0, 0, 0, 1)",
+                    "shadowOpacity": 1,
                     "scaledShadowOpacity": 0,
-                    "shadowRadius": 0,
+                    "shadowRadius": 1,
                     "shadowOffset": {
                         "width": 0,
                         "height": 0
@@ -1128,10 +1128,10 @@
                     "borderRadius": 0,
                     "borderColor": "rgba(236, 237, 237, 1)",
                     "borderStyle": "solid",
-                    "shadowColor": "rgba(0, 0, 0, 0)",
-                    "shadowOpacity": 0,
+                    "shadowColor": "rgba(0, 0, 0, 1)",
+                    "shadowOpacity": 1,
                     "scaledShadowOpacity": 0,
-                    "shadowRadius": 0,
+                    "shadowRadius": 1,
                     "shadowOffset": {
                         "width": 0,
                         "height": 0
