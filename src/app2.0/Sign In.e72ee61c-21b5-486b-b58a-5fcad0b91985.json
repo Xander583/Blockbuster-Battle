@@ -93,13 +93,13 @@
                     "borderRadius": 5,
                     "borderColor": "rgba(0, 0, 0, 1)",
                     "borderStyle": "solid",
-                    "shadowColor": "rgba(0, 0, 0, 0)",
-                    "shadowOpacity": 0,
+                    "shadowColor": "rgba(0, 0, 0, 1)",
+                    "shadowOpacity": 1,
                     "scaledShadowOpacity": 0,
-                    "shadowRadius": 0,
+                    "shadowRadius": 1,
                     "shadowOffset": {
-                        "width": 0,
-                        "height": 0
+                        "width": 2,
+                        "height": 2
                     },
                     "position": "absolute",
                     "left": "50.53333740234375%",
@@ -158,13 +158,13 @@
                     "borderRadius": 5,
                     "borderColor": "rgba(0, 0, 0, 1)",
                     "borderStyle": "solid",
-                    "shadowColor": "rgba(0, 0, 0, 0)",
-                    "shadowOpacity": 0,
+                    "shadowColor": "rgba(0, 0, 0, 1)",
+                    "shadowOpacity": 1,
                     "scaledShadowOpacity": 0,
-                    "shadowRadius": 0,
+                    "shadowRadius": 1,
                     "shadowOffset": {
-                        "width": 0,
-                        "height": 0
+                        "width": 2,
+                        "height": 2
                     },
                     "position": "absolute",
                     "left": "50.53333740234375%",
@@ -194,20 +194,20 @@
             "properties": {
                 "value": true,
                 "Visible": true,
-                "tintColor": "rgba(176, 176, 176, 100)",
-                "onTintColor": "rgba(208, 215, 231, 100)",
-                "thumbTintColor": "rgba(93, 122, 252, 100)",
-                "offThumbTintColor": "rgba(248, 249, 251, 100)",
-                "Height": 35.5,
-                "Width": 71,
-                "X": 198,
-                "Y": 333,
-                "RelativeX": 198,
-                "RelativeY": 333,
+                "tintColor": "rgba(248, 231, 28, 1)",
+                "onTintColor": "rgba(0, 0, 0, 1)",
+                "thumbTintColor": "rgba(248, 231, 28, 1)",
+                "offThumbTintColor": "rgba(0, 0, 0, 1)",
+                "Height": 36.5,
+                "Width": 73,
+                "X": 198.8000030517578,
+                "Y": 333.8000183105469,
+                "RelativeX": 198.8000030517578,
+                "RelativeY": 333.8000183105469,
                 "ResizeMode": "STRETCH",
                 "ParentId": "e72ee61c-21b5-486b-b58a-5fcad0b91985",
                 "position": "absolute",
-                "edgeOffsets": 333,
+                "edgeOffsets": 333.8000183105469,
                 "style": {
                     "position": "absolute",
                     "left": "52.66667073567708%",
@@ -230,8 +230,8 @@
                 "CustomFont": "",
                 "LineHeight": 1,
                 "Color": "rgba(255, 255, 255, 1)",
-                "Height": 29,
-                "Width": 132,
+                "Height": 31,
+                "Width": 134,
                 "Visible": true,
                 "X": 5,
                 "Y": 172,
@@ -261,24 +261,26 @@
                     "borderRadius": 0,
                     "borderColor": "rgba(255, 255, 255, 1)",
                     "borderStyle": "solid",
-                    "shadowColor": "rgba(0, 0, 0, 0)",
-                    "shadowOpacity": 0,
+                    "shadowColor": "rgba(0, 0, 0, 1)",
+                    "shadowOpacity": 1,
                     "scaledShadowOpacity": 0,
-                    "shadowRadius": 0,
+                    "shadowRadius": 1,
                     "shadowOffset": {
-                        "width": 0,
-                        "height": 0
+                        "width": 1,
+                        "height": 1
                     },
                     "position": "absolute",
                     "left": "34.96000569661458%",
                     "top": "80.01124254767147%",
                     "lineHeight": 1,
-                    "display": "flex"
+                    "display": "flex",
+                    "textAlign": "center"
                 },
                 "ParentId": "e72ee61c-21b5-486b-b58a-5fcad0b91985",
                 "position": "absolute",
                 "edgeOffsets": 172,
-                "children": "Email Address"
+                "children": "Email Address",
+                "TextAlign": "center"
             },
             "children": [],
             "id": "9cf9fdf0-f41b-4f78-ad74-b6f4565d6f86",
@@ -327,24 +329,26 @@
                     "borderRadius": 0,
                     "borderColor": "rgba(255, 255, 255, 1)",
                     "borderStyle": "solid",
-                    "shadowColor": "rgba(0, 0, 0, 0)",
-                    "shadowOpacity": 0,
+                    "shadowColor": "rgba(0, 0, 0, 1)",
+                    "shadowOpacity": 1,
                     "scaledShadowOpacity": 0,
-                    "shadowRadius": 0,
+                    "shadowRadius": 1,
                     "shadowOffset": {
-                        "width": 0,
-                        "height": 0
+                        "width": 1,
+                        "height": 1
                     },
                     "position": "absolute",
                     "left": "34.96000569661458%",
                     "top": "80.01124254767147%",
                     "lineHeight": 1,
-                    "display": "flex"
+                    "display": "flex",
+                    "textAlign": "center"
                 },
                 "ParentId": "e72ee61c-21b5-486b-b58a-5fcad0b91985",
                 "position": "absolute",
                 "edgeOffsets": 220.00000000000003,
-                "children": "Password"
+                "children": "Password",
+                "TextAlign": "center"
             },
             "children": [],
             "id": "d3ffc319-a7c1-45c3-820b-ea1d1825ce0b",
@@ -362,13 +366,13 @@
                 "CustomFont": "",
                 "LineHeight": 1,
                 "Color": "rgba(255, 255, 255, 1)",
-                "Height": 35,
-                "Width": 146,
+                "Height": 37,
+                "Width": 138,
                 "Visible": true,
-                "X": 10,
-                "Y": 333,
-                "RelativeX": 10,
-                "RelativeY": 333,
+                "X": 10.800000190734863,
+                "Y": 333.8000183105469,
+                "RelativeX": 10.800000190734863,
+                "RelativeY": 333.8000183105469,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "color": "rgba(255, 255, 255, 1)",
@@ -393,24 +397,26 @@
                     "borderRadius": 0,
                     "borderColor": "rgba(255, 255, 255, 1)",
                     "borderStyle": "solid",
-                    "shadowColor": "rgba(0, 0, 0, 0)",
-                    "shadowOpacity": 0,
+                    "shadowColor": "rgba(0, 0, 0, 1)",
+                    "shadowOpacity": 1,
                     "scaledShadowOpacity": 0,
-                    "shadowRadius": 0,
+                    "shadowRadius": 1,
                     "shadowOffset": {
-                        "width": 0,
-                        "height": 0
+                        "width": 1,
+                        "height": 1
                     },
                     "position": "absolute",
                     "left": "34.96000569661458%",
                     "top": "80.01124254767147%",
                     "lineHeight": 1,
-                    "display": "flex"
+                    "display": "flex",
+                    "textAlign": "center"
                 },
                 "ParentId": "e72ee61c-21b5-486b-b58a-5fcad0b91985",
                 "position": "absolute",
-                "edgeOffsets": 333,
-                "children": "Save Login?"
+                "edgeOffsets": 333.8000183105469,
+                "children": "Save Login?",
+                "TextAlign": "center"
             },
             "children": [],
             "id": "b199b8d0-8e78-49d1-8ddc-3f45c730e02f",
@@ -578,13 +584,13 @@
                             "borderRadius": 5,
                             "borderColor": "rgba(0, 0, 0, 1)",
                             "borderStyle": "solid",
-                            "shadowColor": "rgba(0, 0, 0, 0)",
-                            "shadowOpacity": 0,
+                            "shadowColor": "rgba(0, 0, 0, 1)",
+                            "shadowOpacity": 1,
                             "scaledShadowOpacity": 0,
-                            "shadowRadius": 0,
+                            "shadowRadius": 1,
                             "shadowOffset": {
-                                "width": 0,
-                                "height": 0
+                                "width": 2,
+                                "height": 2
                             },
                             "position": "absolute",
                             "left": "50.53333740234375%",
@@ -649,24 +655,26 @@
                             "borderRadius": 0,
                             "borderColor": "rgba(255, 255, 255, 1)",
                             "borderStyle": "solid",
-                            "shadowColor": "rgba(0, 0, 0, 0)",
-                            "shadowOpacity": 0,
+                            "shadowColor": "rgba(0, 0, 0, 1)",
+                            "shadowOpacity": 1,
                             "scaledShadowOpacity": 0,
-                            "shadowRadius": 0,
+                            "shadowRadius": 1,
                             "shadowOffset": {
-                                "width": 0,
-                                "height": 0
+                                "width": 1,
+                                "height": 1
                             },
                             "position": "absolute",
                             "left": "34.96000569661458%",
                             "top": "80.01124254767147%",
                             "lineHeight": 1,
-                            "display": "flex"
+                            "display": "flex",
+                            "textAlign": "center"
                         },
                         "ParentId": "e72ee61c-21b5-486b-b58a-5fcad0b91985",
                         "position": "absolute",
                         "edgeOffsets": 282,
-                        "children": "Confirm Pass"
+                        "children": "Confirm Pass",
+                        "TextAlign": "center"
                     },
                     "children": [],
                     "id": "0ccc2c33-e48c-4b65-bc27-35cd4cc7fb50",
@@ -706,13 +714,13 @@
                     "paddingLeft": 0,
                     "paddingRight": 0,
                     "borderRadius": 15,
-                    "shadowColor": "rgba(0, 0, 0, 0)",
-                    "shadowOpacity": 0,
+                    "shadowColor": "rgba(0, 0, 0, 1)",
+                    "shadowOpacity": 1,
                     "scaledShadowOpacity": 0,
-                    "shadowRadius": 0,
+                    "shadowRadius": 1,
                     "shadowOffset": {
-                        "width": 0,
-                        "height": 0
+                        "width": 2,
+                        "height": 2
                     },
                     "position": "absolute",
                     "left": "34.266666666666666%",
@@ -760,13 +768,13 @@
                     "paddingLeft": 0,
                     "paddingRight": 0,
                     "borderRadius": 15,
-                    "shadowColor": "rgba(0, 0, 0, 0)",
-                    "shadowOpacity": 0,
+                    "shadowColor": "rgba(0, 0, 0, 1)",
+                    "shadowOpacity": 1,
                     "scaledShadowOpacity": 0,
-                    "shadowRadius": 0,
+                    "shadowRadius": 1,
                     "shadowOffset": {
-                        "width": 0,
-                        "height": 0
+                        "width": 2,
+                        "height": 2
                     },
                     "position": "absolute",
                     "left": "34.266666666666666%",
@@ -814,13 +822,13 @@
                     "paddingLeft": 0,
                     "paddingRight": 0,
                     "borderRadius": 15,
-                    "shadowColor": "rgba(0, 0, 0, 0)",
-                    "shadowOpacity": 0,
+                    "shadowColor": "rgba(0, 0, 0, 1)",
+                    "shadowOpacity": 1,
                     "scaledShadowOpacity": 0,
-                    "shadowRadius": 0,
+                    "shadowRadius": 1,
                     "shadowOffset": {
-                        "width": 0,
-                        "height": 0
+                        "width": 2,
+                        "height": 2
                     },
                     "position": "absolute",
                     "left": "34.266666666666666%",
