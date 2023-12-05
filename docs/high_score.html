@@ -19,54 +19,55 @@
 
 </style>
 
-  <script src="https://apis.google.com/js/api.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      gapi.load('client', function () {
-        gapi.client.init({
-          apiKey: null,
-          clientId: '110126321574070400521', // Replace with your OAuth client ID
-          discoveryDocs: ["https://sheets.googleapis.com/$discovery/rest?version=v4"],
-          scope: 'https://www.googleapis.com/auth/spreadsheets.readonly',
-        }).then(function () {
-          var spreadsheetId = '1CUX3MQM1uIeOCn3ZJm13B5-uZ6z64IC-FFe7EfKMids';
-          var range = 'Sheet1'; // Adjust the sheet name or range as needed
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    gapi.load('client', function () {
+      gapi.client.init({
+        apiKey: 'AIzaSyDCIlGXHYhZnSsZ1OhM6gknFtEujBYDgZA',
+        clientId: '110126321574070400521', // Replace with your OAuth client ID
+        discoveryDocs: ["https://sheets.googleapis.com/$discovery/rest?version=v4"],
+        scope: 'https://www.googleapis.com/auth/spreadsheets.readonly',
+      }).then(function () {
+        var spreadsheetId = '1CUX3MQM1uIeOCn3ZJm13B5-uZ6z64IC-FFe7EfKMids';
+        var range = 'Sheet1'; // Adjust the sheet name or range as needed
 
-          gapi.client.sheets.spreadsheets.values.get({
-            spreadsheetId: spreadsheetId,
-            range: range,
-          }).then(function(response) {
-            var data = response.result.values;
+        gapi.client.sheets.spreadsheets.values.get({
+          spreadsheetId: spreadsheetId,
+          range: range,
+        }).then(function(response) {
+          var data = response.result.values;
 
-            // Create a table and header row
-            var table = document.createElement('table');
-            var thead = table.createTHead();
-            var headerRow = thead.insertRow();
-            
-            // Add headers (assumes 'User' and 'Score' as headers)
-            ['User', 'Score'].forEach(function (header) {
-              var th = document.createElement('th');
-              th.appendChild(document.createTextNode(header));
-              headerRow.appendChild(th);
-            });
+          // Create a table and header row
+          var table = document.createElement('table');
+          var thead = table.createTHead();
+          var headerRow = thead.insertRow();
 
-            // Populate the table with data
-            var tbody = table.createTBody();
-            data.forEach(function (row) {
-              var newRow = tbody.insertRow();
-              row.forEach(function (cellData) {
-                var newCell = newRow.insertCell();
-                newCell.appendChild(document.createTextNode(cellData));
-              });
-            });
-
-            // Append the table to the body
-            document.body.appendChild(table);
+          // Add headers (assumes 'User' and 'Score' as headers)
+          ['User', 'Score'].forEach(function (header) {
+            var th = document.createElement('th');
+            th.appendChild(document.createTextNode(header));
+            headerRow.appendChild(th);
           });
+
+          // Populate the table with data
+          var tbody = table.createTBody();
+          data.forEach(function (row) {
+            var newRow = tbody.insertRow();
+            row.forEach(function (cellData) {
+              var newCell = newRow.insertCell();
+              newCell.appendChild(document.createTextNode(cellData));
+            });
+          });
+
+          // Append the table to the body
+          document.body.innerHTML = ''; // Clear existing content
+          document.body.appendChild(table);
         });
       });
     });
-  </script>
+  });
+</script>
+
 </head>
 <body>
   <div class="main-content">
