@@ -62,11 +62,80 @@
             "translatedName": "Label",
             "reactType": "Text",
             "properties": {
+                "Text": "",
+                "FontSize": 18,
+                "CustomFont": "",
+                "LineHeight": 1,
+                "Color": "rgba(248, 231, 28, 1)",
+                "FontWeight": "bold",
+                "Height": 64,
+                "Width": 311,
+                "Visible": true,
+                "X": 29,
+                "Y": 413,
+                "RelativeX": 29,
+                "RelativeY": 413,
+                "ResizeMode": "STRETCH",
+                "style": {
+                    "color": "rgba(248, 231, 28, 1)",
+                    "fontSize": 18,
+                    "fontStyle": "normal",
+                    "textShadowOffset": {},
+                    "letterSpacing": 0,
+                    "textDecorationLine": "none",
+                    "textDecorationStyle": "solid",
+                    "textDecorationColor": "rgba(0, 0, 0, 1)",
+                    "writingDirection": "auto",
+                    "marginTop": 0,
+                    "marginBottom": 0,
+                    "marginLeft": 0,
+                    "marginRight": 0,
+                    "paddingTop": 0,
+                    "paddingBottom": 0,
+                    "paddingLeft": 0,
+                    "paddingRight": 0,
+                    "flexWrap": "wrap",
+                    "borderWidth": 0,
+                    "borderRadius": 0,
+                    "borderColor": "rgba(236, 237, 237, 1)",
+                    "borderStyle": "solid",
+                    "shadowColor": "rgba(0, 0, 0, 0)",
+                    "shadowOpacity": 0,
+                    "scaledShadowOpacity": 0,
+                    "shadowRadius": 0,
+                    "shadowOffset": {
+                        "width": 0,
+                        "height": 0
+                    },
+                    "position": "absolute",
+                    "left": "0%",
+                    "top": "62.41004863779048%",
+                    "lineHeight": 1,
+                    "display": "flex",
+                    "fontWeight": "bold",
+                    "textAlign": "center"
+                },
+                "ParentId": "e1939381-a4f7-4b85-945e-ad80a2b158f2",
+                "position": "absolute",
+                "edgeOffsets": 413.00000000000006,
+                "children": "",
+                "TextAlign": "center"
+            },
+            "children": [],
+            "id": "a1d7b7a1-998e-46ed-b303-74de4a3119bc",
+            "thunkableVersion": 434,
+            "name": "SelectError"
+        },
+        {
+            "type": "Label",
+            "translatedName": "Label",
+            "reactType": "Text",
+            "properties": {
                 "Text": "Pick your 1 star movie",
                 "FontSize": 24,
                 "CustomFont": "",
                 "LineHeight": 1,
-                "Color": "rgba(255, 255, 255, 1)",
+                "Color": "rgba(248, 231, 28, 1)",
                 "FontWeight": "bold",
                 "TextAlign": "center",
                 "Height": 44,
@@ -78,7 +147,7 @@
                 "RelativeY": 31,
                 "ResizeMode": "STRETCH",
                 "style": {
-                    "color": "rgba(255, 255, 255, 1)",
+                    "color": "rgba(248, 231, 28, 1)",
                     "fontSize": 24,
                     "fontStyle": "normal",
                     "textShadowOffset": {},
@@ -139,9 +208,9 @@
                 "Width": 140,
                 "Visible": true,
                 "X": 29,
-                "Y": 447,
+                "Y": 512,
                 "RelativeX": 29,
-                "RelativeY": 447,
+                "RelativeY": 512,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "marginTop": 0,
@@ -172,7 +241,7 @@
                 "Disabled": false,
                 "ParentId": "e1939381-a4f7-4b85-945e-ad80a2b158f2",
                 "position": "absolute",
-                "edgeOffsets": 447
+                "edgeOffsets": 512
             },
             "children": [],
             "id": "66e281ef-0549-49d2-911a-0ab81d732569",
@@ -193,9 +262,9 @@
                 "Width": 313,
                 "Visible": true,
                 "X": 27,
-                "Y": 596,
+                "Y": 582,
                 "RelativeX": 27,
-                "RelativeY": 596,
+                "RelativeY": 582,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "marginTop": 0,
@@ -226,67 +295,13 @@
                 "Disabled": false,
                 "ParentId": "e1939381-a4f7-4b85-945e-ad80a2b158f2",
                 "position": "absolute",
-                "edgeOffsets": 596.9999999999999
+                "edgeOffsets": 582
             },
             "children": [],
             "id": "53d64ad4-ee31-424e-87c6-7d1b097bfd5d",
             "thunkableVersion": 432,
             "bindings": null,
             "name": "Profile"
-        },
-        {
-            "type": "Button",
-            "translatedName": "Button",
-            "properties": {
-                "Text": "Shift",
-                "TextColor": "rgba(0, 0, 0, 1)",
-                "FontSize": 16,
-                "CustomFont": "",
-                "BackgroundColor": "rgba(248, 231, 28, 1)",
-                "Height": 56,
-                "Width": 313,
-                "Visible": true,
-                "X": 27,
-                "Y": 523,
-                "RelativeX": 27,
-                "RelativeY": 523,
-                "ResizeMode": "STRETCH",
-                "style": {
-                    "marginTop": 0,
-                    "marginBottom": 0,
-                    "marginLeft": 0,
-                    "marginRight": 0,
-                    "paddingTop": 0,
-                    "paddingBottom": 0,
-                    "paddingLeft": 0,
-                    "paddingRight": 0,
-                    "borderRadius": 15,
-                    "shadowColor": "rgba(0, 0, 0, 1)",
-                    "shadowOpacity": 1,
-                    "scaledShadowOpacity": 0,
-                    "shadowRadius": 0,
-                    "shadowOffset": {
-                        "width": 3,
-                        "height": 3
-                    },
-                    "position": "absolute",
-                    "left": "69.73333740234375%",
-                    "top": "59.362820420844265%",
-                    "display": "flex"
-                },
-                "FontBold": false,
-                "FontItalic": false,
-                "Raised": false,
-                "Disabled": false,
-                "ParentId": "e1939381-a4f7-4b85-945e-ad80a2b158f2",
-                "position": "absolute",
-                "edgeOffsets": 523
-            },
-            "children": [],
-            "id": "064524fe-2a28-45e9-8be9-b8432adea3a3",
-            "thunkableVersion": 432,
-            "bindings": null,
-            "name": "Shift"
         },
         {
             "type": "Button",
@@ -300,10 +315,10 @@
                 "Height": 51,
                 "Width": 140,
                 "Visible": true,
-                "X": 198,
-                "Y": 447,
-                "RelativeX": 198,
-                "RelativeY": 447,
+                "X": 199,
+                "Y": 512,
+                "RelativeX": 199,
+                "RelativeY": 512,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "marginTop": 0,
@@ -334,7 +349,7 @@
                 "Disabled": false,
                 "ParentId": "e1939381-a4f7-4b85-945e-ad80a2b158f2",
                 "position": "absolute",
-                "edgeOffsets": 447
+                "edgeOffsets": 512
             },
             "children": [],
             "id": "3ccd0661-3c2d-4db6-932e-fe33c6624322",
@@ -529,7 +544,7 @@
                                             "type": "COMPONENT_PROPERTY_TABLE_ELEMENT",
                                             "componentId": "d9901d1e-af6c-4418-ae2d-8aed7c834801",
                                             "property": "DataSourceTableBinding",
-                                            "column": "654d0f88da1eb2965e0a172e",
+                                            "column": "656e057a8be5600d20307c8c",
                                             "row": 0
                                         }
                                     },
@@ -539,7 +554,8 @@
                             ],
                             "id": "f315d16e-a244-4c45-a779-b06b099b3d67",
                             "thunkableVersion": 432,
-                            "name": "TitleWrapper"
+                            "name": "TitleWrapper",
+                            "bindings": {}
                         },
                         {
                             "type": "Row",
@@ -598,25 +614,28 @@
                                     "children": [],
                                     "id": "c8beb2c0-157c-4e6a-a40e-5de1ff4269c0",
                                     "thunkableVersion": 432,
-                                    "name": "Caret"
+                                    "name": "Caret",
+                                    "bindings": {}
                                 }
                             ],
                             "id": "3be02a0c-0c55-4843-a93a-4c577cef4db7",
                             "thunkableVersion": 432,
-                            "name": "CaretWrapper"
+                            "name": "CaretWrapper",
+                            "bindings": {}
                         }
                     ],
                     "id": "7a821bd4-62b3-412f-a803-6f504ff7f981",
                     "thunkableVersion": 432,
-                    "name": "LayoutWrapper"
+                    "name": "LayoutWrapper",
+                    "bindings": {}
                 }
             ],
             "id": "d9901d1e-af6c-4418-ae2d-8aed7c834801",
             "thunkableVersion": 432,
             "bindings": {
                 "DataSourceTableBinding": {
-                    "dataSourceLinkId": "65598082fc11c0874cd02763",
-                    "collectionId": "654d0f88da1eb2965e0a172d",
+                    "dataSourceLinkId": "656e057a8be5600d20307cab",
+                    "collectionId": "656e057a8be5600d20307c8b",
                     "isLocal": false,
                     "type": "DATA_SOURCE_TABLE"
                 }
@@ -811,7 +830,7 @@
                                             "type": "COMPONENT_PROPERTY_TABLE_ELEMENT",
                                             "componentId": "364d52a4-6a12-43dc-9e32-3149958fb95e",
                                             "property": "DataSourceTableBinding",
-                                            "column": "654d0f88da1eb2965e0a172e",
+                                            "column": "656e057a8be5600d20307c8c",
                                             "row": 0
                                         }
                                     },
@@ -821,7 +840,8 @@
                             ],
                             "id": "32ef45e6-8e1c-4815-bfb1-1b94553a4c39",
                             "thunkableVersion": 432,
-                            "name": "TitleWrapper"
+                            "name": "TitleWrapper",
+                            "bindings": {}
                         },
                         {
                             "type": "Row",
@@ -880,25 +900,28 @@
                                     "children": [],
                                     "id": "54964354-33ba-45f6-b0f1-c43683c9626e",
                                     "thunkableVersion": 432,
-                                    "name": "Caret"
+                                    "name": "Caret",
+                                    "bindings": {}
                                 }
                             ],
                             "id": "7fcb1b47-d84a-4381-945f-c53c5e06008b",
                             "thunkableVersion": 432,
-                            "name": "CaretWrapper"
+                            "name": "CaretWrapper",
+                            "bindings": {}
                         }
                     ],
                     "id": "09e5ee6f-cd1f-4794-a047-27ad80e7a5db",
                     "thunkableVersion": 432,
-                    "name": "LayoutWrapper"
+                    "name": "LayoutWrapper",
+                    "bindings": {}
                 }
             ],
             "id": "364d52a4-6a12-43dc-9e32-3149958fb95e",
             "thunkableVersion": 432,
             "bindings": {
                 "DataSourceTableBinding": {
-                    "dataSourceLinkId": "65598082fc11c0874cd02763",
-                    "collectionId": "654d0f88da1eb2965e0a172d",
+                    "dataSourceLinkId": "656e057a8be5600d20307cab",
+                    "collectionId": "656e057a8be5600d20307c8b",
                     "isLocal": false,
                     "type": "DATA_SOURCE_TABLE"
                 }
@@ -1093,7 +1116,7 @@
                                             "type": "COMPONENT_PROPERTY_TABLE_ELEMENT",
                                             "componentId": "4b23f1bc-36b6-4b44-948f-a5a7a0d16eaf",
                                             "property": "DataSourceTableBinding",
-                                            "column": "654d0f88da1eb2965e0a172e",
+                                            "column": "656e057a8be5600d20307c8c",
                                             "row": 0
                                         }
                                     },
@@ -1103,7 +1126,8 @@
                             ],
                             "id": "fca42f5c-ec80-4787-ade6-6027bee5df68",
                             "thunkableVersion": 432,
-                            "name": "TitleWrapper"
+                            "name": "TitleWrapper",
+                            "bindings": {}
                         },
                         {
                             "type": "Row",
@@ -1162,25 +1186,28 @@
                                     "children": [],
                                     "id": "b7fe9c53-9261-4ad4-bfd7-c621597d36cf",
                                     "thunkableVersion": 432,
-                                    "name": "Caret"
+                                    "name": "Caret",
+                                    "bindings": {}
                                 }
                             ],
                             "id": "cea14a0a-ecc8-4718-ae7b-a5dbcd719586",
                             "thunkableVersion": 432,
-                            "name": "CaretWrapper"
+                            "name": "CaretWrapper",
+                            "bindings": {}
                         }
                     ],
                     "id": "5914c838-d100-48ac-8d8e-4404b4561ece",
                     "thunkableVersion": 432,
-                    "name": "LayoutWrapper"
+                    "name": "LayoutWrapper",
+                    "bindings": {}
                 }
             ],
             "id": "4b23f1bc-36b6-4b44-948f-a5a7a0d16eaf",
             "thunkableVersion": 432,
             "bindings": {
                 "DataSourceTableBinding": {
-                    "dataSourceLinkId": "65598082fc11c0874cd02763",
-                    "collectionId": "654d0f88da1eb2965e0a172d",
+                    "dataSourceLinkId": "656e057a8be5600d20307cab",
+                    "collectionId": "656e057a8be5600d20307c8b",
                     "isLocal": false,
                     "type": "DATA_SOURCE_TABLE"
                 }
@@ -1375,7 +1402,7 @@
                                             "type": "COMPONENT_PROPERTY_TABLE_ELEMENT",
                                             "componentId": "79b0cf64-16bf-4480-9ef7-1b05a652401a",
                                             "property": "DataSourceTableBinding",
-                                            "column": "654d0f88da1eb2965e0a172e",
+                                            "column": "656e057a8be5600d20307c8c",
                                             "row": 0
                                         }
                                     },
@@ -1385,7 +1412,8 @@
                             ],
                             "id": "41a4c34f-acfb-4489-8dc8-a037664186e7",
                             "thunkableVersion": 432,
-                            "name": "TitleWrapper"
+                            "name": "TitleWrapper",
+                            "bindings": {}
                         },
                         {
                             "type": "Row",
@@ -1444,25 +1472,28 @@
                                     "children": [],
                                     "id": "c557fc84-a593-40e4-99d9-c796c69d60a8",
                                     "thunkableVersion": 432,
-                                    "name": "Caret"
+                                    "name": "Caret",
+                                    "bindings": {}
                                 }
                             ],
                             "id": "df57eab1-1bb3-4d11-a793-5fe4ef6f6329",
                             "thunkableVersion": 432,
-                            "name": "CaretWrapper"
+                            "name": "CaretWrapper",
+                            "bindings": {}
                         }
                     ],
                     "id": "ec60051e-f82a-482e-b5c6-b5c0fbb7693c",
                     "thunkableVersion": 432,
-                    "name": "LayoutWrapper"
+                    "name": "LayoutWrapper",
+                    "bindings": {}
                 }
             ],
             "id": "79b0cf64-16bf-4480-9ef7-1b05a652401a",
             "thunkableVersion": 432,
             "bindings": {
                 "DataSourceTableBinding": {
-                    "dataSourceLinkId": "65598082fc11c0874cd02763",
-                    "collectionId": "654d0f88da1eb2965e0a172d",
+                    "dataSourceLinkId": "656e057a8be5600d20307cab",
+                    "collectionId": "656e057a8be5600d20307c8b",
                     "isLocal": false,
                     "type": "DATA_SOURCE_TABLE"
                 }
@@ -1657,7 +1688,7 @@
                                             "type": "COMPONENT_PROPERTY_TABLE_ELEMENT",
                                             "componentId": "f11799ba-274b-4783-8ece-4cbcce771338",
                                             "property": "DataSourceTableBinding",
-                                            "column": "654d0f88da1eb2965e0a172e",
+                                            "column": "656e057a8be5600d20307c8c",
                                             "row": 0
                                         }
                                     },
@@ -1667,7 +1698,8 @@
                             ],
                             "id": "94b1b2a8-2fdc-40c0-a159-977b6cce999e",
                             "thunkableVersion": 432,
-                            "name": "TitleWrapper"
+                            "name": "TitleWrapper",
+                            "bindings": {}
                         },
                         {
                             "type": "Row",
@@ -1726,17 +1758,20 @@
                                     "children": [],
                                     "id": "90df3568-0912-4b3e-a0d6-ef18ec595a07",
                                     "thunkableVersion": 432,
-                                    "name": "Caret"
+                                    "name": "Caret",
+                                    "bindings": {}
                                 }
                             ],
                             "id": "c27a77b3-971f-47ec-9b9b-dc40b2867844",
                             "thunkableVersion": 432,
-                            "name": "CaretWrapper"
+                            "name": "CaretWrapper",
+                            "bindings": {}
                         }
                     ],
                     "id": "2cdd2a10-8a50-4710-8ec5-c594e5748aab",
                     "thunkableVersion": 432,
-                    "name": "LayoutWrapper"
+                    "name": "LayoutWrapper",
+                    "bindings": {}
                 }
             ],
             "id": "f11799ba-274b-4783-8ece-4cbcce771338",
@@ -1744,8 +1779,8 @@
             "name": "Movies1",
             "bindings": {
                 "DataSourceTableBinding": {
-                    "dataSourceLinkId": "65598082fc11c0874cd02763",
-                    "collectionId": "654d0f88da1eb2965e0a172d",
+                    "dataSourceLinkId": "656e057a8be5600d20307cab",
+                    "collectionId": "656e057a8be5600d20307c8b",
                     "isLocal": false,
                     "type": "DATA_SOURCE_TABLE"
                 }

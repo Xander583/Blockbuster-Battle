@@ -1242,7 +1242,7 @@
             "type": "Image",
             "translatedName": "Image",
             "properties": {
-                "resizeMode": "stretch",
+                "resizeMode": "center",
                 "Height": 176,
                 "Width": 229,
                 "Visible": true,
