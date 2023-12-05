@@ -532,7 +532,7 @@
             "type": "Image",
             "translatedName": "Image",
             "properties": {
-                "resizeMode": "stretch",
+                "resizeMode": "center",
                 "Height": 222,
                 "Width": 312,
                 "Visible": true,
