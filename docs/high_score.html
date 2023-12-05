@@ -2,70 +2,85 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-    <!-- Link css-->
-  <link href = "style.css" type="text/css" rel = "stylesheet" />
-   <!-- Link google font usage-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dela+Gothic+One&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link css-->
+  <link href="style.css" type="text/css" rel="stylesheet" />
+  <!-- Link google font usage-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Dela+Gothic+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap" rel="stylesheet">
 
+  <title>BlockBuster Battle</title>
+<style>
 
-    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+</style>
 
-    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      gapi.load('client', function () {
+        gapi.client.init({
+          apiKey: null,
+          clientId: '110126321574070400521', // Replace with your OAuth client ID
+          discoveryDocs: ["https://sheets.googleapis.com/$discovery/rest?version=v4"],
+          scope: 'https://www.googleapis.com/auth/spreadsheets.readonly',
+        }).then(function () {
+          var spreadsheetId = '1CUX3MQM1uIeOCn3ZJm13B5-uZ6z64IC-FFe7EfKMids';
+          var range = 'Sheet1'; // Adjust the sheet name or range as needed
 
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap" rel="stylesheet">
+          gapi.client.sheets.spreadsheets.values.get({
+            spreadsheetId: spreadsheetId,
+            range: range,
+          }).then(function(response) {
+            var data = response.result.values;
 
-    <title>BlockBuster Battle</title>
-    <style>
+            // Create a table and header row
+            var table = document.createElement('table');
+            var thead = table.createTHead();
+            var headerRow = thead.insertRow();
+            
+            // Add headers (assumes 'User' and 'Score' as headers)
+            ['User', 'Score'].forEach(function (header) {
+              var th = document.createElement('th');
+              th.appendChild(document.createTextNode(header));
+              headerRow.appendChild(th);
+            });
 
+            // Populate the table with data
+            var tbody = table.createTBody();
+            data.forEach(function (row) {
+              var newRow = tbody.insertRow();
+              row.forEach(function (cellData) {
+                var newCell = newRow.insertCell();
+                newCell.appendChild(document.createTextNode(cellData));
+              });
+            });
 
-    </style>
-    <title>High-Scores</title>
+            // Append the table to the body
+            document.body.appendChild(table);
+          });
+        });
+      });
+    });
+  </script>
 </head>
 <body>
-<div class = "main-content">
-
-
-    <!-- header class for title, logo, etc  -->
-    <div class = "header">
-
-        <h1 id = "WebTitle">
-            High-Scores!
-        </h1>
-
-        <!-- Change here for image  -->
-
+  <div class="main-content">
+    <!-- header class for title, logo, etc -->
+    <div class="header">
+      <h1 id="WebTitle">
+        High-Scores!
+      </h1>
+      <!-- Change here for image -->
     </div>
     <div class="button-container">
-
-        <button class="button" onclick="window.location.href='https://xander583.github.io/Blockbuster-Battle/index.html'"> Main Page</button>
-        <button class="button" onclick="window.location.href='https://xander583.github.io/Blockbuster-Battle/thunkable.html'"> Thunkable App Page</button>
+      <button class="button" onclick="window.location.href='https://xander583.github.io/Blockbuster-Battle/index.html'"> Main Page</button>
+      <button class="button" onclick="window.location.href='https://xander583.github.io/Blockbuster-Battle/thunkable.html'"> Thunkable App Page</button>
     </div>
-
-
-
-<table>
-    <thead>
-    <tr>
-        <th>Player</th>
-        <th>Score</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>Player 1</td>
-        <td>200</td>
-    </tr>
-    <tr>
-        <td>Player 2</td>
-        <td>150</td>
-    </tr>
-    <!-- add more rows as needed -->
-    </tbody>
-</table>
-
-</div>
+  </div>
 </body>
 </html>
