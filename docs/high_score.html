@@ -50,8 +50,8 @@
       const thead = table.createTHead();
       const headerRow = thead.insertRow();
 
-      // Add headers (assumes 'User' and 'Score' as headers)
-      ['User', 'Score'].forEach(function (header) {
+      // Add headers (assumes 'Position', 'User', and 'Score' as headers)
+      ['Position', 'User', 'Score'].forEach(function (header) {
         const th = document.createElement('th');
         th.appendChild(document.createTextNode(header));
         headerRow.appendChild(th);
@@ -59,11 +59,16 @@
 
       // Populate the table with data
       const tbody = table.createTBody();
+      let position = 1;
       for (const key in data) {
         if (data.hasOwnProperty(key)) {
           const row = data[key];
           const newRow = tbody.insertRow();
+          // Add position number to the first column
+          newRow.insertCell().appendChild(document.createTextNode(position++));
+          // Add user name to the second column
           newRow.insertCell().appendChild(document.createTextNode(row.User));
+          // Add score to the third column
           newRow.insertCell().appendChild(document.createTextNode(row.Score));
         }
       }
