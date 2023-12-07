@@ -68,8 +68,8 @@
           newRow.insertCell().appendChild(document.createTextNode(position++));
           // Add user name to the second column
           newRow.insertCell().appendChild(document.createTextNode(row.User));
-          // Add score to the third column
-          newRow.insertCell().appendChild(document.createTextNode(row.Score));
+          // Add formatted score to the third column
+          newRow.insertCell().appendChild(document.createTextNode(formatScore(row.Score)));
         }
       }
 
@@ -79,7 +79,13 @@
       scoreTableDiv.appendChild(table);
     });
   });
+
+  // Function to format the score with dollar signs and commas
+  function formatScore(score) {
+    return "$" + parseFloat(score).toLocaleString(undefined, { maximumFractionDigits: 0 });
+  }
 </script>
+
   
 </head>
 <body>
