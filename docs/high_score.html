@@ -15,58 +15,67 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400&display=swap" rel="stylesheet">
 
   <title>BlockBuster Battle</title>
-<style>
+  <style>
+    /* Add your styles here */
+  </style>
 
-</style>
+<!-- Add the Firebase JavaScript SDK -->
+<script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-database.js"></script>
 
+<!-- Initialize Firebase -->
 <script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyB1AvHecofSrFGgCpnJv8VykCgygHxjlrM",
+    authDomain: "blockbuster-battle.firebaseapp.com",
+    databaseURL: "https://blockbuster-battle-default-rtdb.firebaseio.com",
+    projectId: "blockbuster-battle",
+    storageBucket: "blockbuster-battle.appspot.com",
+    messagingSenderId: "451896778802",
+    appId: "1:451896778802:web:7d6280dd271d32fc13dc2b",
+    measurementId: "G-SJMQM8H0QJ"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+
+  // Reference to the leaderboard node in Firebase
+  const leaderboardRef = firebase.database().ref('/leaderboard');
+
   document.addEventListener('DOMContentLoaded', function () {
-    gapi.load('client', function () {
-      gapi.client.init({
-        apiKey: 'AIzaSyDCIlGXHYhZnSsZ1OhM6gknFtEujBYDgZA',
-        clientId: '110126321574070400521', // Replace with your OAuth client ID
-        discoveryDocs: ["https://sheets.googleapis.com/$discovery/rest?version=v4"],
-        scope: 'https://www.googleapis.com/auth/spreadsheets.readonly',
-      }).then(function () {
-        var spreadsheetId = '1CUX3MQM1uIeOCn3ZJm13B5-uZ6z64IC-FFe7EfKMids';
-        var range = 'Sheet1'; // Adjust the sheet name or range as needed
+    leaderboardRef.once('value').then(function(snapshot) {
+      const data = snapshot.val();
 
-        gapi.client.sheets.spreadsheets.values.get({
-          spreadsheetId: spreadsheetId,
-          range: range,
-        }).then(function(response) {
-          var data = response.result.values;
+      // Create a table and header row
+      const table = document.createElement('table');
+      const thead = table.createTHead();
+      const headerRow = thead.insertRow();
 
-          // Create a table and header row
-          var table = document.createElement('table');
-          var thead = table.createTHead();
-          var headerRow = thead.insertRow();
-
-          // Add headers (assumes 'User' and 'Score' as headers)
-          ['User', 'Score'].forEach(function (header) {
-            var th = document.createElement('th');
-            th.appendChild(document.createTextNode(header));
-            headerRow.appendChild(th);
-          });
-
-          // Populate the table with data
-          var tbody = table.createTBody();
-          data.forEach(function (row) {
-            var newRow = tbody.insertRow();
-            row.forEach(function (cellData) {
-              var newCell = newRow.insertCell();
-              newCell.appendChild(document.createTextNode(cellData));
-            });
-          });
-
-          // Append the table to the body
-          document.body.innerHTML = ''; // Clear existing content
-          document.body.appendChild(table);
-        });
+      // Add headers (assumes 'User' and 'Score' as headers)
+      ['User', 'Score'].forEach(function (header) {
+        const th = document.createElement('th');
+        th.appendChild(document.createTextNode(header));
+        headerRow.appendChild(th);
       });
+
+      // Populate the table with data
+      const tbody = table.createTBody();
+      for (const key in data) {
+        if (data.hasOwnProperty(key)) {
+          const row = data[key];
+          const newRow = tbody.insertRow();
+          newRow.insertCell().appendChild(document.createTextNode(row.User));
+          newRow.insertCell().appendChild(document.createTextNode(row.Score));
+        }
+      }
+
+      // Append the table to the body
+      document.body.innerHTML = ''; // Clear existing content
+      document.body.appendChild(table);
     });
   });
 </script>
+  
+
 
 </head>
 <body>
@@ -82,6 +91,9 @@
       <button class="button" onclick="window.location.href='https://xander583.github.io/Blockbuster-Battle/index.html'"> Main Page</button>
       <button class="button" onclick="window.location.href='https://xander583.github.io/Blockbuster-Battle/thunkable.html'"> Thunkable App Page</button>
     </div>
+    
+    <!-- Add an element with the id 'scoreTable' where the table will be appended -->
+    <div id="scoreTable"></div>
   </div>
 </body>
 </html>
