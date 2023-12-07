@@ -1,7 +1,5 @@
 # Welcome
 
-This is the Blockbuster Battle FAQ. If you have any questions about the app, this is the place to go.
-
 ## What the heck is this thing?
 
 The goal of BlockBuster Battle is to provide a platform for movie-goers of all types to have a friendly competiton, and get more involved with cinema.
