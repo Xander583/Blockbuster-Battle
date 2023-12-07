@@ -20,8 +20,8 @@
   </style>
 
 <!-- Add the Firebase JavaScript SDK -->
-<script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.1.1/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
 
 <!-- Initialize Firebase -->
 <script>
@@ -36,7 +36,7 @@
     measurementId: "G-SJMQM8H0QJ"
   };
 
-  firebase.initializeApp(firebaseConfig);
+  var firebaseApp = firebase.initializeApp(firebaseConfig);
 
   // Reference to the leaderboard node in Firebase
   const leaderboardRef = firebase.database().ref('/leaderboard');
