@@ -68,15 +68,14 @@
         }
       }
 
-      // Append the table to the body
-      document.body.innerHTML = ''; // Clear existing content
-      document.body.appendChild(table);
+      // Append the table to the div with id 'scoreTable'
+      const scoreTableDiv = document.getElementById('scoreTable');
+      scoreTableDiv.innerHTML = ''; // Clear existing content
+      scoreTableDiv.appendChild(table);
     });
   });
 </script>
   
-
-
 </head>
 <body>
   <div class="main-content">
