@@ -164,14 +164,14 @@
             "type": "Image",
             "translatedName": "Image",
             "properties": {
-                "resizeMode": "center",
-                "Height": 108,
-                "Width": 140,
+                "resizeMode": "stretch",
+                "Height": 190,
+                "Width": 171,
                 "Visible": true,
-                "X": 115,
-                "Y": 171,
-                "RelativeX": 115,
-                "RelativeY": 171,
+                "X": 105,
+                "Y": 142,
+                "RelativeX": 105,
+                "RelativeY": 142,
                 "ResizeMode": "STRETCH",
                 "style": {
                     "marginTop": 0,
@@ -198,7 +198,8 @@
                 "capInsets": {},
                 "ParentId": "a5a40d3d-7300-4b37-9f4d-b5406d6abd7e",
                 "position": "absolute",
-                "edgeOffsets": 171
+                "edgeOffsets": 142,
+                "Picture": "blockbusterlogo.png"
             },
             "children": [],
             "id": "d8c353c7-28c2-4b69-8bc1-85a3e1bd5a91",
