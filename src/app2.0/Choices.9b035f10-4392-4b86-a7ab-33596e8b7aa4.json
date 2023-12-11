@@ -1,4 +1,5 @@
 {
+    "id": "9b035f10-4392-4b86-a7ab-33596e8b7aa4",
     "type": "Screen",
     "translatedName": "Screen",
     "reactType": "ViewWithProps",
@@ -899,7 +900,6 @@
             "name": "Label10"
         }
     ],
-    "id": "9b035f10-4392-4b86-a7ab-33596e8b7aa4",
     "thunkableVersion": 434,
     "bindings": null,
     "name": "Choices"
