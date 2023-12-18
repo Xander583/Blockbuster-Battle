@@ -25,10 +25,10 @@ for user_id, variables in data.items():
     if isinstance(variables, dict):
         premovie_variables = {k: v for k, v in variables.items() if "upmovie" in k.lower()}
         
-        # Iterate through each premovie variable for the user
+        # Iterate through each movie variable for the user
         for variable_name, variable_value in premovie_variables.items():
-            # Find the closest match in the Google Sheet (assuming "release" column is column 3)
-            result = process.extractOne(variable_value, sheet.col_values(3), score_cutoff=70)
+            # Find the closest match in the Google Sheet (assuming "release" column is column 1)
+            result = process.extractOne(variable_value, sheet.col_values(1), score_cutoff=70)
             
             # Check if a match is found
             if result and result[1] > 70:
