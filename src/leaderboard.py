@@ -58,7 +58,8 @@ for user_id, variables in data.items():
                 # Remove commas and dollar signs and convert to an integer
                 gross_value = int(gross_value.replace(",", "").replace("$", ""))
 
-                # Add the gross value to the total score
+                # MULTIPLIER HERE
+                # Multiplying by i ensures that the values get multiplied based on the position the user chose 
                 score += (gross_value * i)
 
         print(f"User: {user_name}, Total Score: {score}")
