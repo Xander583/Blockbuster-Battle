@@ -65,7 +65,7 @@ def write_to_google_sheets(movie_data, google_sheet_key):
 
 def parse_release_date(release_date):
     try:
-        # Remove suffixes (st, nd, rd, th)
+        # Remove suffixes (st, nd, rd, th) so that old movies can be removed from options
         release_date = re.sub(r'(?<=\d)(st|nd|rd|th)', '', release_date)
         # Parse and format the date
         return datetime.datetime.strptime(release_date, "%a, %B %d").replace(year=datetime.datetime.now().year)
