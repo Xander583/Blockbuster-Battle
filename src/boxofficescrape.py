@@ -50,7 +50,7 @@ def parse_and_extract(url, week_number):
 
     df = pd.DataFrame(table_data, columns=header_names)
 
-    # Select only the "Release" and "Gross" columns
+    # Select only the "Release" and "Gross" columns for scraping
     df_selected = df[["Release", "Gross"]]
 
     filepath = os.path.join(BASE_DIR, 'boxoffice.csv')
