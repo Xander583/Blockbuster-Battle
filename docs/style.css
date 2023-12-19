@@ -118,3 +118,15 @@ th, td {
         font-size: 22px;
     }
 }
+
+.image-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-gap: 10px; /* Gap between images */
+    margin-bottom: 20px; /* Spacing between tablet and phone image groups */
+}
+
+.image-container img {
+    width: 100%; /* Full width of the column */
+    height: auto; /* Maintain aspect ratio */
+}
