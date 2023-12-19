@@ -21,7 +21,6 @@ data = ref.get()
 
 # Iterate through each user in the database
 for user_id, variables in data.items():
-    # Check if the user has any variables containing "premovie"
     if isinstance(variables, dict):
         premovie_variables = {k: v for k, v in variables.items() if "upmovie" in k.lower()}
         
