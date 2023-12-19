@@ -22,10 +22,10 @@ data = ref.get()
 # Iterate through each user in the database
 for user_id, variables in data.items():
     if isinstance(variables, dict):
-        premovie_variables = {k: v for k, v in variables.items() if "upmovie" in k.lower()}
+        movie_variables = {k: v for k, v in variables.items() if "upmovie" in k.lower()}
         
         # Iterate through each movie variable for the user
-        for variable_name, variable_value in premovie_variables.items():
+        for variable_name, variable_value in movie_variables.items():
             # Find the closest match in the Google Sheet (assuming "release" column is column 1)
             result = process.extractOne(variable_value, sheet.col_values(1), score_cutoff=70)
             
