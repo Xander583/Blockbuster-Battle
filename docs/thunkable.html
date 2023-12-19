@@ -57,11 +57,13 @@
   <div class="button-container">
     <button class="button" onclick="window.location.href='https://xander583.github.io/Blockbuster-Battle/high_score.html'"> High Score Page</button>
     <button class="button" onclick="window.location.href='https://xander583.github.io/Blockbuster-Battle/index.html'"> Main Page</button>
+    <button class="button" onclick="window.location.href='https://xander583.github.io/Blockbuster-Battle/faq.html'"> FAQ</button>
+    <button class="button" onclick="window.location.href='https://xander583.github.io/Blockbuster-Battle/thunkable.html'"> Thunkable App Page</button>
   </div>
   <img src="img/FNAF.jpg" width = "300" height="200">
 
   <!-- thunkable embed -->
-  <iframe src="https://thunkable.site/w/cp48vPCIyS67MiZgvznPb" title="blockbuster-battle" height = 700 width = 700></iframe>
+  <iframe src="https://thunkable.site/w/cp48vPCIyS67MiZgvznPb" title="blockbuster-battle" height = 750 width = 700></iframe>
 
   <!-- import statement  -->
   <script type="module">
@@ -222,144 +224,6 @@
 
     const db = getDatabase();
 
-    var enterID = document.querySelector("#enterID");
-    var enterName = document.querySelector("#enterName");
-    var enterAge = document.querySelector("#enterAge");
-    var findID = document.querySelector("#findID");
-    var findName = document.querySelector("#findName");
-    var findAge = document.querySelector("#findAge");
-
-
-
-    var birthday = document.querySelector("#birthday");
-    var dataName = document.querySelector("#dataName");
-    var image = document.querySelector("#image");
-    var animal = document.querySelector("#animal");
-    var food = document.querySelector("#food");
-
-
-
-    var birthday2 = document.querySelector("#birthday2");
-    var dataName2 = document.querySelector("#dataName2");
-    var image2 = document.querySelector("#image2");
-    var animal2 = document.querySelector("#animal2");
-    var food2 = document.querySelector("#food2");
-
-
-
-
-
-    <!-- Functions not used  -->
-    function InsertData() {
-      set(ref(db, "People/"+ enterID.value),{
-        Name: enterName.value,
-        ID: enterID.value,
-        Age: enterAge.value
-      })
-              .then(()=>{
-                alert("Data added successfully");
-              })
-              .catch((error)=>{
-                alert(error);
-              });
-    }
-
-    function FindData() {
-      const dbref = ref(db);
-
-      get(child(dbref, "People/" + findID.value))
-              .then((snapshot)=>{
-                if(snapshot.exists()){
-                  findName.innerHTML = "Name: " + snapshot.val().Name;
-                  findAge.innerHTML = "Age: " + snapshot.val().Age;
-                } else {
-                  alert("No data found");
-                }
-              })
-              .catch((error)=>{
-                alert(error)
-              })
-
-    }
-
-
-    const dbref = ref(db);
-
-    get (child(dbref, "OIoXByEinqYrT9IJSorrlFLkev13/"))
-            .then((snapshot)=>{
-              if(snapshot.exists()){
-                dataName.innerHTML = "name: " + snapshot.val().name;
-                birthday.innerHTML = "birthday: " + snapshot.val().birthday;
-                animal.innerHTML = "Favorite Animal: " + snapshot.val().animal;
-                food.innerHTML = "Favorite Food: " + snapshot.val().food;
-
-                image.src = snapshot.val().image;
-
-              } else {
-                alert("No data found");
-              }
-            })
-            .catch((error)=>{
-              alert(error)
-            })
-
-
-
-
-
-    get (child(dbref, "gY3Vbkh8yfVnAEa4mf7vuVgxxb83/"))
-            .then((snapshot)=>{
-              if(snapshot.exists()){
-                dataName2.innerHTML = "name: " + snapshot.val().name;
-
-                birthday2.innerHTML = "birthday: " + snapshot.val().birthday;
-                animal2.innerHTML = "Favorite Animal: " + snapshot.val().animal;
-                food2.innerHTML = "Favorite Food: " + snapshot.val().food;
-
-                image2.src = snapshot.val().image;
-
-              } else {
-                alert("No data found");
-              }
-            })
-            .catch((error)=>{
-              alert(error)
-            })
-
-
-
-
-
-
-
-
-    function UpdateData(){
-      update(ref(db, "People/"+ enterID.value),{
-        Name: enterName.value,
-        Age: enterAge.value
-      })
-              .then(()=>{
-                alert("Data updated successfully");
-              })
-              .catch((error)=>{
-                alert(error);
-              });
-    }
-
-    function RemoveData(){
-      remove(ref(db, "People/"+ enterID.value))
-              .then(()=>{
-                alert("Data deleted successfully");
-              })
-              .catch((error)=>{
-                alert(error);
-              });
-    }
-
-    insertBtn.addEventListener('click', InsertData);
-    updateBtn.addEventListener('click', UpdateData);
-    removeBtn.addEventListener('click', RemoveData);
-    findBtn.addEventListener('click', FindData);
 
   </script>
 
