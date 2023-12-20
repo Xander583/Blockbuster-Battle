@@ -23,7 +23,7 @@ user_scores_data = []
 # Iterate through each user in the database
 for user_id, variables in data.items():
     # Check if the user has any variables containing "premovie"
-    if isinstance(variables, dict) and any(f"premovie{i}" in variables for i in range(1, 6)):
+    if isinstance(variables, dict) and any(f"upmovie{i}" in variables for i in range(1, 6)):
         # Extract the "name" variable for the user
         user_name = variables.get("name", "")
 
