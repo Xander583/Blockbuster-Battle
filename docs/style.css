@@ -102,9 +102,12 @@ table {
 
 th, td {
     border: 2px solid #FFD700;
+    border-width: 4px;
     padding: 8px;
     text-align: center;
     color: rgb(0, 0, 0);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 25px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -118,7 +121,16 @@ th, td {
         font-size: 22px;
     }
 }
-
+h2{
+    
+    text-shadow: orange 1px 1px 1px;
+    
+}
+p{
+    text-shadow: white 1px 1px 1px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+}
 .image-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columns */
